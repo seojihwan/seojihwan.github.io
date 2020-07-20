@@ -31,16 +31,16 @@ a();
 위의 코드와 같이 함수 4개를 정의하고 a()를 호출하게되면
 stack에 d c b a 순서로 쌓이는 것을 볼 수 있다.
 
-![image](/image/Call Stack1.PNG)
-
+![image](/image/Call Stack1.png)
+  
 개발자 도구의 Sources 탭을 확인하면 Call Stack을 확인할 수 있다.
 
-![image](/image/Call Stack2.PNG)
+![image](/image/Call Stack2.png)
 
 코드를 계속 해서 진행시키면 로그가 찍힌 후에, 스택이 차례대로 사라지는 것을 볼 수 있다.
 
 만약에 코드가 진행중에 에러가 발생하면 어떻게 될까??
-![image](/image/Call Stack3.PNG)
+![image](/image/Call Stack3.png)
 
 에러 메시지는 에러 발생이전의 Call Stack을 보여준다.
-![image](/image/Call Stack4.PNG)
+![image](/image/Call Stack4.png)

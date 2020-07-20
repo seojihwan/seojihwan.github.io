@@ -12,7 +12,7 @@ draft: false
 
 ### Event loop
 
-![image](/assets/webImage/architecture.png)
+![image](/image/Architecture.png)
 
 [블로그 링크](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4)
 

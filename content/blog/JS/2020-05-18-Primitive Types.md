@@ -6,7 +6,7 @@ draft: false
 ---
 
 
-### Primitive Type이란 object나 methods가 아닌 data를 의미한다.
+### Primitive Type이란 object나 method가 아닌 data를 의미한다.
 
 자바스크립트에서는 string, number, bigint, boolean, undefined, symbol이라는
 6가지 primitive data type들이 존재한다.
