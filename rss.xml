@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://gatsby-starter-bee.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Jul 2020 07:03:51 GMT</lastBuildDate><item><title><![CDATA[[JS] Vanilla JavaScript day 2: Clock]]></title><description><![CDATA[div로 원 표현하기위해 height와 width를 같게 지정하고 border-radius값을 50%로 설정한다. image 시침,분침,초침의 position은 absolute로 설정한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://gatsby-starter-bee.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 24 Jul 2020 07:19:28 GMT</lastBuildDate><item><title><![CDATA[[JS] Vanilla JavaScript day 2: Clock]]></title><description><![CDATA[div로 원 표현하기위해 height와 width를 같게 지정하고 border-radius값을 50%로 설정한다.  시침,분침,초침의 position은 absolute로 설정한다.
 부모의 position을 relative…]]></description><link>https://gatsby-starter-bee.netlify.com/JS/2020-07-23-Vanilla-JS-2day-review/</link><guid isPermaLink="false">https://gatsby-starter-bee.netlify.com/JS/2020-07-23-Vanilla-JS-2day-review/</guid><pubDate>Fri, 24 Jul 2020 15:59:00 GMT</pubDate><content:encoded>&lt;p&gt;div로 원 표현하기위해 height와 width를 같게 지정하고 border-radius값을 50%로 설정한다.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.circle&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 250px&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -10,10 +10,30 @@
   &lt;span class=&quot;token property&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; inline-block&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; relative&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/image/clock.png&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 760px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 74%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADfUlEQVQ4y22SbUzVZRjG7+dPtj7Up1y1VUsNCRJMTSciTVYmNWLL5TQSbEMyKBBBaPKSBAyCAUF4PGQ0dBC1yVrRNKllL0jSyrbEycokaoUZIJidpiXy6zocv7j6cO3+P+fcz++57ut5zIqGuEbFP2IlUukwVv4LrmEcr/UiXsdlvDencB1TWMc/WLu0T2r7G9d6CWsJYPVjmOWe4H+VdxIvCK48q8ZJrPlPSZv8AVzLBdULIYjW5tN/r57Han8X8Jkv+Y+e/RqXO4AVnmaef4x1BwKk9QRY816AG3wTWN0oXtM41iRI0x/YKzqw/hxWrcNt48dco9TDeBn9WOa3JLSOkPXBJOG7R5i9a5wHOifI/zTALX7BakdxQUiDYHVaV8td+YiAa98npO6Z6jZ8iKX1MXfnIJldZ7ACjZ3Vp3xPK9vfmN14lvQDcvaS3FSNChyEjYVgxcrdEjuZ0SNvYUldeOt7sJRekn3fE1N5Uk5PEPZ8P9dl9nJT6RDRzZPU9F/idsVg+nYVgpYJViRYwSkBV7VgCa9hD74h6Nt4TxzE1n3E440DhBd+hT19FJd9nJvTPiGn7AzvHIJDw9PEnp/Gfr6C80/gtst97qAmOS5gbB0W24DF78Ie2ktY0n7s4S5WlRxhTaWAj/Uwa8sxbOt37Oz8i30907T/cIWIU3o+E+COXMS26FVsVs+mowIuLsPur8SW1wvqwyXskds2vMQOsv3fsGCb8kv5glkZAyTVTNDeN0VytyB7L3N97zSuXRezUS8j5TNNpvwtege28EVscQW2tFrgOlx8M7ZyNzcmdZDedIxU3yBP+Yco2D/Gap/yKpDKzuEqlWHxr9j6w1iyLjXpXQEjt2P3CrqgGIspEbgcW1aLF9eExfnluo3bUrqJzunl1kxltHkQL28Yl/9TaNRUjflol6Zqx1brYi0iF7snD4vMF7hQbksFVQRLa3HLG/Hk1GKVb7wuLfkgYSmKYMPn2JPSWr2IRGUer5hWqGelLtjmPofdLYVLQXjQbbScLlS2i6oEr8YtKsMt0SErfNr0ug5QjWsJgYJ1WX2od0mNgHelM6M5GYJmy62cRspp5AuCCxxVFHIfpd9iFMd9VaE6c9jLqso9piLUu0DT2R1p2J2bZqBuTpbc5gicE6oRAs3fis0LTqAapZyjtDFyx9Xvqwqu52+T8vgXfnWIUp8EfxgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/d96a49b9758d58184a5f05b1386a8b93/3c051/clock.png&quot;
+        srcset=&quot;/static/d96a49b9758d58184a5f05b1386a8b93/5a46d/clock.png 300w,
+/static/d96a49b9758d58184a5f05b1386a8b93/0a47e/clock.png 600w,
+/static/d96a49b9758d58184a5f05b1386a8b93/3c051/clock.png 760w&quot;
+        sizes=&quot;(max-width: 760px) 100vw, 760px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;시침,분침,초침의 position은 absolute로 설정한다.
-부모의 position을 relative로 설정하고, 시침,분침,초침의 top 값을 50%로 설정하고 적절한 width 값과 left값을 설정하면 모든 침이 중심에서 9시방향을 가르키게 된다.
-&lt;a href=&quot;https://www.w3schools.com/cssref/trycss3_transform-origin_inuse.htm&quot;&gt;w3shools링크&lt;/a&gt;&lt;/p&gt;
+부모의 position을 relative로 설정하고, 시침,분침,초침의 top 값을 50%로 설정하고 적절한 width 값과 left값을 설정하면 모든 침이 중심에서 9시방향을 가르키게 된다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.w3schools.com/cssref/trycss3_transform-origin_inuse.htm&quot;&gt;w3shools링크&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.circle &gt; div&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; absolute&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 50%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
