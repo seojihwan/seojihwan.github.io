@@ -5,7 +5,7 @@ category: 'JS'
 draft: false
 ---
 
-#### day 1 Drum Kit
+### day 1 Drum Kit
 
 day 1은 keydown 이벤트를 활용하여 특정 키를 눌렀을 때 드럼의 소리가 나오도록 만드는 과정을 해보았다.
 
