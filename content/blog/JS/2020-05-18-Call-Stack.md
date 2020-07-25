@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] Call Stack"
+title: "[JS] Call Stack"
 date: 2020-05-18 12:00:00
 category: 'JS'
 draft: false

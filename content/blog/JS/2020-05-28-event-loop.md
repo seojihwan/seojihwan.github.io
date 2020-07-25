@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] Event loop"
+title: "[JS] Event loop"
 date: 2020-05-24 12:00:00
 category: 'JS'
 draft: false

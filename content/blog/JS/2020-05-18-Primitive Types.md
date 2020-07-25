@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] Primitive Types"
+title: "[JS] Primitive Types"
 date: 2020-05-18 18:00:00
 category: 'JS'
 draft: false

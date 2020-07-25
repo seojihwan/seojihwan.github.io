@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] Value vs Reference"
+title: "[JS] Value vs Reference"
 date: 2020-05-19 12:00:00
 category: 'JS'
 draft: false

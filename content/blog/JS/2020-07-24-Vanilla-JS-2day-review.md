@@ -5,6 +5,8 @@ category: 'JS'
 draft: false
 ---
 
+### day 2: Clock
+
 div로 원 표현하기위해 height와 width를 같게 지정하고 border-radius값을 50%로 설정한다.
 
 ```css
@@ -25,6 +27,7 @@ div로 원 표현하기위해 height와 width를 같게 지정하고 border-radi
 
 시침,분침,초침의 position은 absolute로 설정한다.
 부모의 position을 relative로 설정하고, 시침,분침,초침의 top 값을 50%로 설정하고 적절한 width 값과 left값을 설정하면 모든 침이 중심에서 9시방향을 가르키게 된다.
+
 [w3shools링크](https://www.w3schools.com/cssref/trycss3_transform-origin_inuse.htm)
 
 ```css

@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] Type Coercion, typeof and instanceof"
+title: "[JS] Type Coercion, typeof and instanceof"
 date: 2020-05-19 14:00:00
 category: 'JS'
 draft: false

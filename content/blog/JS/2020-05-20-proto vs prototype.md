@@ -1,5 +1,5 @@
 ---
-title: "[JavaScript] __proto__ vs prototype"
+title: "[JS] __proto__ vs prototype"
 date: 2020-05-20 12:00:00
 category: 'JS'
 draft: false
