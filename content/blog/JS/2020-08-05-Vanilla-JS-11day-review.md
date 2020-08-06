@@ -1,6 +1,6 @@
 ---
 title: '[JS] Vanilla JavaScript day 11: Custom Video Player'
-date: 2020-08-05 15:36:14
+date: 2020-08-06 17:00:00
 category: JS
 draft: false
 ---
