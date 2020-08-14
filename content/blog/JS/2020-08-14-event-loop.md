@@ -1,6 +1,6 @@
 ---
 title: "[JS] Event loop"
-date: 2020-05-24 12:00:00
+date: 2020-08-14 02:27:26
 category: 'JS'
 draft: false
 ---
@@ -14,7 +14,8 @@ draft: false
 - Call Stack
 - Web API
 - Task Queue
-![image](./image/Architecture.png)
+
+![image](./image/architecture.png)
 
 [블로그 링크](https://medium.com/front-end-weekly/javascript-event-loop-explained-4cd26af121d4)
 
