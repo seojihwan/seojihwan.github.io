@@ -61,5 +61,26 @@ setTimeout에 전달하는 함수를 bind해 주었다.
 
 그다음 throttle에 전달된 함수를 call을 이용하여 this와 연결한 후 호출하면 callback함수에서 this객체를 window가 아닌 이벤트가 추가된 객체로 설정할 수 있다.
 
+---
+또는 arrow function을 이용하여 lexical context인 element를 this로 사용할 수 있다.
+
+```js
+function throttle(func, wait = 30) {
+  let timeout;
+  return function () {
+    let args = arguments;
+    if (!timeout) {
+      timeout = setTimeout(() => {
+        timeout = null;
+        func.call(this, args[0]);
+      }, wait);
+    }
+  };
+}
+
+
+```
+
+
 #### 결과화면
 ![image](./image/day16.gif)
