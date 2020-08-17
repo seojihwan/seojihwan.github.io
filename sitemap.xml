@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-17-Vanilla-JS-26-review.md/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-17-Vanilla-JS-26day-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-14-event-loop/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://gatsby-starter-bee.netlify.com/JS/test/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-13-Call-Stack/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-09-Vanilla-JS-17day-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://gatsby-starter-bee.netlify.com/JS/2020-08-09-Vanilla-JS-16day-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
