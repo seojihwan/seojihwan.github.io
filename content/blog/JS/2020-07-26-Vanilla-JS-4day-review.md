@@ -104,7 +104,7 @@ const fifteen = inventors.filter(
 console.table(fifteen)
 ```
 
-![image](/image/day4-1.PNG)
+![image](/image/day4-1.png)
 
 filter를 이용하여 각 element에 통과할 수 있는 조건을 arrow function으로 전달한다면 해당 조건이 만족하는 element로 만들어진 배열이 반환됨을 확인할 수 있다.
 
@@ -117,7 +117,7 @@ const names = inventors.map(inventor => [inventor.first, inventor.last])
 console.table(names)
 ```
 
-![image](/image/day4-2.PNG)
+![image](/image/day4-2.png)
 
 map함수에 각 element의 first와 last라는 속성을 배열로 감싸주어 반환하는 arrow function을 전달하였다.
 
@@ -130,7 +130,7 @@ const orderedInventors = inventors.sort((a, b) => (a.year > b.year ? 1 : -1))
 console.table(orderedInventors)
 ```
 
-![image](/image/day4-3.PNG)
+![image](/image/day4-3.png)
 
 JavaScript에서 sort함수는 elements들을 string으로 변환후 UTF-16 code에 따라 오름차순 정렬된다.
 
@@ -166,7 +166,7 @@ const orderedLivedInventors = inventors.sort((a, b) =>
 console.table(orderedLivedInventors)
 ```
 
-![image](/image/day4-4.PNG)
+![image](/image/day4-4.png)
 
 3번과 유사한 문제이다.
 
@@ -184,7 +184,7 @@ const de = links
 console.table(de)
 ```
 
-![image](/image/day4-5.PNG)
+![image](/image/day4-5.png)
 
 Boulevard 이름들은 a tag안에 텍스트로 저장되어있는데,
 상위 category를 querySelector로 접근하고 모든 a tag들을 querySelectorAll을 이용하여 NodeList로 반환 받았다.

@@ -95,4 +95,4 @@ spread Opreator를 이용하여 새로운 배열을 만들 수도 있다.
 
 삭제 결과
 
-![image](./image/day7.PNG)
+![image](./image/day7.png)

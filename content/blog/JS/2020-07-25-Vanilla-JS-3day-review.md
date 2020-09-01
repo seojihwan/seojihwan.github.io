@@ -57,10 +57,10 @@ console.log(Array.from(inputs));
 ```
 
 NodeList의 method
-![image](/image/day3-1.PNG)
+![image](/image/day3-1.png)
 
 array의 method
-![image](/image/day3-2.PNG)
+![image](/image/day3-2.png)
 
 처음에 이벤트리스너의 콜백함수로 arrow function을 사용하였더니 this가 dom요소를 나타내지 않고 Window를 나타내었다. 
 공부 끝에 arrow function은 lexical context에의해 this가 정적으로 결정됨을 알게 되었다. 
@@ -96,7 +96,7 @@ dataset은 Web API가 제공하는 read-only의 property이다. html에서 'data
 ```
 또 document.documentElement를 통해 HTML에 접근하고   document.documentElement.style.setProperty를 이용해 style 값을 설정해 주어 CSS 변수의 값을 수정하였다.
 
-![image](/image/day3-3.PNG)
+![image](/image/day3-3.png)
 
 결과 화면
 ![image](/image/day3.gif)

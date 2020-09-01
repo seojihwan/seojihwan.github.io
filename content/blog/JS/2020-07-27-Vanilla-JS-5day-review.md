@@ -11,19 +11,19 @@ CSS의 Flexbox layout을 이용하여 이미지 갤러리를 만들어 보았다
 
 [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 
-![image](/image/day5-1.PNG)
+![image](/image/day5-1.png)
 
 부모 요소에 display: flex, flex-direction을 row로 설정하면 하나의 행안에 여러 열의 box형태로 layout을 구성할 수 있다.
 
 또한 flexbox 내부의 요소들은 길게 늘어나는 특성을 갖고있고, 자식요소에 flex: 1을 부여함으로 써 각각의 비중을 갖게 해 주었다.
 
-![image](/image/day5-2.PNG)
+![image](/image/day5-2.png)
 
 align-items: center를 이용해 내부 p태그들을 가운데 정렬하고
 text-align: center를 이용해 p태그들의 innerText들을 가운데 정렬하였다.
 justify-content: space-between을 이용해 처음과 마지막 p 태그는 위 아래 끝에 붙이고, 가운데 p는 중간에 배치하였다.
 
-![image](/image/day5-1.PNG)
+![image](/image/day5-1.png)
 
 위의 그림처럼 초기의 위 아래 p 태그들은 숨겨져 있는 상태에서, 클릭되었을 때 transform을 통해 나타나도록 설정해보자.
 
