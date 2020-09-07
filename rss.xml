@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Sep 2020 13:31:52 GMT</lastBuildDate><item><title><![CDATA[[JS] 우아한 테크 러닝 1주차 - (2)]]></title><description><![CDATA[우아한 테크 코스 1주차 - 2 JS / Redux 자바스크립트 함수는 값을 반환하게 되어있음 함수는 값이다 return 없으면 undefined반환 입력을 컴포넌트 출력을 컴포넌트
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 07 Sep 2020 10:12:10 GMT</lastBuildDate><item><title><![CDATA[[Web-Bundler] webpack]]></title><description><![CDATA[webpack https://webpack.js.org/concepts/ Core Concepts Entry: 웹팩이 사용할 시작점 : 웹팩 설정 파일 Output: 번들 파일이 만들어질 장소와 번들 파일의 이름 정하기  라이브러리는 Node.js…]]></description><link>https://seojihwan.github.io/developer-roadmap/Web-Bundler/1_webpack-1/</link><guid isPermaLink="false">https://seojihwan.github.io/developer-roadmap/Web-Bundler/1_webpack-1/</guid><pubDate>Mon, 07 Sep 2020 19:08:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack&quot; aria-label=&quot;webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://webpack.js.org/concepts/&quot;&gt;https://webpack.js.org/concepts/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Core Concepts&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Entry: 웹팩이 사용할 시작점&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;webpack.config.js&lt;/code&gt;: 웹팩 설정 파일&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  entry&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./path/to/my/entry/file.js&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Output: 번들 파일이 만들어질 장소와 번들 파일의 이름 정하기&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;path&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  entry&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./path/to/my/entry/file.js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  output&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    path&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__dirname&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;dist&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    filename&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;my-first-webpack.bundle.js&apos;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;path&lt;/code&gt; 라이브러리는 Node.js module로 file path를 다룰 때 사용된다.
+&lt;a href=&quot;https://nodejs.org/api/path.html#path_path_resolve_paths&quot;&gt;https://nodejs.org/api/path.html#path_path_resolve_paths&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/foo/bar&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./baz&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Returns: &apos;/foo/bar/baz&apos;&lt;/span&gt;
+
+path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;/foo/bar&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;/tmp/file/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// Returns: &apos;/tmp/file&apos;&lt;/span&gt;
+
+path&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;resolve&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;wwwroot&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;static_files/png/&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;../gif/image.gif&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// If the current working directory is /home/myself/node,&lt;/span&gt;
+&lt;span class=&quot;token comment&quot;&gt;// this returns &apos;/home/myself/node/wwwroot/static_files/gif/image.gif&apos;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://nodejs.org/api/path.html#path_path_resolve_paths&quot;&gt;https://nodejs.org/api/path.html#path_path_resolve_paths&lt;/a&gt;
+위의 예시와 사이트의 설명을 보면, path.resolve는 파라미터를 오른쪽에서 왼쪽 순으로 파라미터를 살피면서, 절대 경로가 완성될 때까지 파라미터를 합치게 된다.&lt;/p&gt;
+&lt;p&gt;2번예시를 보면 /tmp/file/ 이라는 절대경로가 완성되었기 때문에 /foo/bar는 반영되지 않는다.&lt;/p&gt;
+&lt;p&gt;기본적으로 path.resolve()는 해당 모듈의 위치를 가리킨다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Loaders
+웹팩은 JS와 JSON files들만 이해하지만, Loader는 웹팩이 다른 유형의 파일들도 유효한 모듈로 변환할 수 있도록 도와준다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; path &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;path&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  output&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    filename&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;my-first-webpack.bundle.js&apos;&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  module&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    rules&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; test&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\.txt$/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; use&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;raw-loader&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;module.rules를 통해 test에는 적용될 파일의 확장자, use는 사용할 loader를 설정한다.&lt;/p&gt;
+&lt;p&gt;.txt확장자의 파일들을 import또는 require()를 통해 가져와 bundle 파일에 추가하기 전에 loader를 통해 변형시킨다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plugins
+플러그인을 활용하여 번들 최적화, asset, environment variables들을 관리한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; HtmlWebpackPlugin &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;html-webpack-plugin&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//installed via npm&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; webpack &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;webpack&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//to access built-in plugins&lt;/span&gt;
+
+module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  module&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    rules&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; test&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token regex&quot;&gt;/\.txt$/&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; use&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;raw-loader&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  plugins&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;HtmlWebpackPlugin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;template&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./src/index.html&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;html-webpack-plugin은 생성된 모든 번들을 적용한 html파일을 만들어낸다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Mode
+mode값으로 development, production, none을 사용할 수 있다.
+&lt;a href=&quot;https://webpack.js.org/configuration/mode/&quot;&gt;https://webpack.js.org/configuration/mode/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;default는 production값이다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;module&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;exports &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  mode&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;production&apos;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token constant&quot;&gt;CLI&lt;/span&gt; 명령어로 사용할 수 있다&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+
+&lt;span class=&quot;token template-string&quot;&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;webpack --mode=development&lt;/span&gt;&lt;span class=&quot;token template-punctuation string&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 647px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 58.00000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABjklEQVQoz12SiZKkIAyGff9X3Jpp2wMPDrsRkNbW2Q+YndpdKoaQyp/jj5XUZnUubFuI0XmvlwX59vxIjP88s+c8z+rXx6c0JmzRhQDs1jQfdY3hQyAXOhnIFn5s9Or9cRxVCMEsyyzlFiPvdcWP5/GwVhkzSfl4Pp/WSiWlVlIp65w2hshU+f3nXNf1fh+d6Ovm3nSd0roTArzUWmUBSSK7uvO6cvC7IgfXyXccr9fLLEZpZR4L7SA7FUru88zq+1VQlTZaDMMwTs45eqZ/uhqniTrjPPViwJBK90L0w4DmiYbRBGbmLZ8Yo/eu62m7EWIgtKb9Xtzu9x7gNA3jyFBiHK1d6TERVmDlwO69bYm+tx0psBNeCPzGpDngjrG1WVyp/B+Yym3XN11bwMgs524Qn/WtbpLzVtfQyRYTGMz+2tF0Qj6mHeeZqciiF0M6/Hl/njmttaytOFPbPnjSQCPskyIvg6HWvGnulYsALPj9ur7ymq5CO20nxopr33fiAp78eyXJhwKF3uuvA/43O9an/MaZoyMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;image&quot;
+        title=&quot;image&quot;
+        src=&quot;/static/21a24938875e2a1f4c54c37579cdd3da/ca12d/mode_option.png&quot;
+        srcset=&quot;/static/21a24938875e2a1f4c54c37579cdd3da/5a46d/mode_option.png 300w,
+/static/21a24938875e2a1f4c54c37579cdd3da/0a47e/mode_option.png 600w,
+/static/21a24938875e2a1f4c54c37579cdd3da/ca12d/mode_option.png 647w&quot;
+        sizes=&quot;(max-width: 647px) 100vw, 647px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Brower Compatibility
+webpack은 ES5를 준수 하는 모든 브라우저를 지원한다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;따라서 import 대신 require를 사용해야한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[JS] 우아한 테크 러닝 1주차 - (2)]]></title><description><![CDATA[우아한 테크 코스 1주차 - 2 JS / Redux 자바스크립트 함수는 값을 반환하게 되어있음 함수는 값이다 return 없으면 undefined반환 입력을 컴포넌트 출력을 컴포넌트
 => h o c ( high order component…]]></description><link>https://seojihwan.github.io/JS/2020-09-03-utl-1-2/</link><guid isPermaLink="false">https://seojihwan.github.io/JS/2020-09-03-utl-1-2/</guid><pubDate>Thu, 03 Sep 2020 22:30:17 GMT</pubDate><content:encoded>&lt;p&gt;우아한 테크 코스 1주차 - 2&lt;/p&gt;
 &lt;h3 id=&quot;js--redux&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#js--redux&quot; aria-label=&quot;js  redux permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JS / Redux&lt;/h3&gt;
 &lt;p&gt;자바스크립트 함수는 값을 반환하게 되어있음 함수는 값이다&lt;/p&gt;
