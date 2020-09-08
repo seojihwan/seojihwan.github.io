@@ -120,5 +120,6 @@ transitioned 이벤트 리스너가 동작하여, playing이라는 classList를 
 ```
 
 결과 화면
+
 ![image](/image/drumkit.gif)
 

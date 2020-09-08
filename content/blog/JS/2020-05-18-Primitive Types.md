@@ -10,7 +10,13 @@ draft: false
 
 자바스크립트에서는 string, number, bigint, boolean, undefined, symbol이라는
 6가지 primitive data type들이 존재한다.
-
+불변하여 변형할 수 없다는 특징이 있다.
+```js
+var bar = "baz";
+console.log(bar);        // baz
+bar.toUpperCase();
+console.log(bar);        // baz
+```
 #### undefined: 선언되었을때 자동적으로 갖게되는 value
 
 ```javascript
