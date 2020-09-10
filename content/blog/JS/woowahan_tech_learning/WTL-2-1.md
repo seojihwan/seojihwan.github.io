@@ -165,7 +165,7 @@ render(<App />, document.getElementById("root"));
 ```
 전체 코드는 위와 같고 실행하면 아래의 화면이 나타난다.
 
-![rendered](../image/rendered.png)
+![rendered](./image/rendered.png)
 
 
 React없이 Vanilla JS로 React를 만들어 보며 React의 동작을 이해할 수 있었다.
