@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 10 Sep 2020 14:48:21 GMT</lastBuildDate><item><title><![CDATA[[JS] 우아한 테크 러닝 2주차 - (2)]]></title><description><![CDATA[함수형 컴포넌트와 클래스형 컴포넌트의 상태 관리 함수형 컴포넌트 setState를 이용해야 상태가 바뀜을 리액트가 감지한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 17 Sep 2020 16:08:28 GMT</lastBuildDate><item><title><![CDATA[[JS] 우아한 테크 러닝 3주차 - (1)]]></title><description><![CDATA[reducer는 동기함수 이기 때문에 비동기 작업 불가 Middleware https://dobbit.github.io/redux/advanced/Middleware.html]]></description><link>https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-3-1/</link><guid isPermaLink="false">https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-3-1/</guid><pubDate>Tue, 15 Sep 2020 19:23:15 GMT</pubDate><content:encoded>&lt;h3 id=&quot;&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#&quot; aria-label=&quot; permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;reducer는 동기함수 이기 때문에 비동기 작업 불가&lt;/p&gt;
+&lt;p&gt;Middleware&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://dobbit.github.io/redux/advanced/Middleware.html&quot;&gt;https://dobbit.github.io/redux/advanced/Middleware.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[JS] 우아한 테크 러닝 2주차 - (2)]]></title><description><![CDATA[함수형 컴포넌트와 클래스형 컴포넌트의 상태 관리 함수형 컴포넌트 setState를 이용해야 상태가 바뀜을 리액트가 감지한다.
 이를통해 re rendering이 일어난다. 클래스 컴포넌트는 상태를 가질 수 있다.
 constructor…]]></description><link>https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-2/</link><guid isPermaLink="false">https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-2/</guid><pubDate>Thu, 10 Sep 2020 19:00:41 GMT</pubDate><content:encoded>&lt;h3 id=&quot;함수형-컴포넌트와-클래스형-컴포넌트의-상태-관리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%95%A8%EC%88%98%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%99%80-%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EC%83%81%ED%83%9C-%EA%B4%80%EB%A6%AC&quot; aria-label=&quot;함수형 컴포넌트와 클래스형 컴포넌트의 상태 관리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;함수형 컴포넌트와 클래스형 컴포넌트의 상태 관리&lt;/h3&gt;
 &lt;p&gt;함수형 컴포넌트&lt;/p&gt;
@@ -185,8 +188,7 @@ done이라는 flag를 통해 generator함수가 끝낫는지 여부를 확인 �
 &lt;span class=&quot;token function&quot;&gt;main2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;위 두 코드는 모두 시작과 끝의 메시지가 3초 후에 나타나는 코드이다.
 generator는 프로미스 객체이든 value이든 yield를 사용할 수 있지만 await는 프로미스 객체에 대해서만 사용가능하다.
-async await는 generator로 만들어졌다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[python] Trie]]></title><description><![CDATA[문제링크 Trie: 문자열을 검색하는데 특화된 자료구조]]></description><link>https://seojihwan.github.io/Algorithm/2020-09-10-Trie/</link><guid isPermaLink="false">https://seojihwan.github.io/Algorithm/2020-09-10-Trie/</guid><pubDate>Thu, 10 Sep 2020 16:18:11 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;&quot;&gt;문제링크&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;trie-문자열을-검색하는데-특화된-자료구조&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#trie-%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EA%B2%80%EC%83%89%ED%95%98%EB%8A%94%EB%8D%B0-%ED%8A%B9%ED%99%94%EB%90%9C-%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0&quot; aria-label=&quot;trie 문자열을 검색하는데 특화된 자료구조 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Trie: 문자열을 검색하는데 특화된 자료구조&lt;/h3&gt;</content:encoded></item><item><title><![CDATA[[JS] 우아한 테크 러닝 2주차 - (1)]]></title><description><![CDATA[우아한 테크 코스 2주차 - 1 React 직접 구현하기 사용자에만 머무르지 말자 지식을 넓히자 real dom을 통해 ui를 조작하는 것은 안정성이 떨어진다 + low level React: dom…]]></description><link>https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-1/</link><guid isPermaLink="false">https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-1/</guid><pubDate>Tue, 08 Sep 2020 19:30:33 GMT</pubDate><content:encoded>&lt;p&gt;우아한 테크 코스 2주차 - 1&lt;/p&gt;
+async await는 generator로 만들어졌다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[JS] 우아한 테크 러닝 2주차 - (1)]]></title><description><![CDATA[우아한 테크 코스 2주차 - 1 React 직접 구현하기 사용자에만 머무르지 말자 지식을 넓히자 real dom을 통해 ui를 조작하는 것은 안정성이 떨어진다 + low level React: dom…]]></description><link>https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-1/</link><guid isPermaLink="false">https://seojihwan.github.io/JS/woowahan_tech_learning/WTL-2-1/</guid><pubDate>Tue, 08 Sep 2020 19:30:33 GMT</pubDate><content:encoded>&lt;p&gt;우아한 테크 코스 2주차 - 1&lt;/p&gt;
 &lt;h3 id=&quot;react-직접-구현하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react-%EC%A7%81%EC%A0%91-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0&quot; aria-label=&quot;react 직접 구현하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;React 직접 구현하기&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;사용자에만 머무르지 말자&lt;/li&gt;
@@ -786,90 +788,7 @@ store&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
     dispatch&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
     subscribe
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Performance] 웹 성능 최적화 - (2) (작성중)]]></title><description><![CDATA[애니메이션 최적화 Reflow, Repaint - 렌더링 성능 최적화 프레임이 유실되는 쟁크 현상 발생 브라우저 렌더링 과정 Critical Rendering Path 또는 Pixel Pipeline DOM + CSSOM > Render Tree…]]></description><link>https://seojihwan.github.io/Web-Performance/performance-2/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/performance-2/</guid><pubDate>Thu, 03 Sep 2020 15:25:11 GMT</pubDate><content:encoded>&lt;h4 id=&quot;애니메이션-최적화&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98-%EC%B5%9C%EC%A0%81%ED%99%94&quot; aria-label=&quot;애니메이션 최적화 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;애니메이션 최적화&lt;/h4&gt;
-&lt;p&gt;Reflow, Repaint - 렌더링 성능 최적화&lt;/p&gt;
-&lt;p&gt;프레임이 유실되는 쟁크 현상 발생&lt;/p&gt;
-&lt;h4 id=&quot;브라우저-렌더링-과정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81-%EA%B3%BC%EC%A0%95&quot; aria-label=&quot;브라우저 렌더링 과정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;브라우저 렌더링 과정&lt;/h4&gt;
-&lt;p&gt;Critical Rendering Path 또는 Pixel Pipeline&lt;/p&gt;
-&lt;p&gt;DOM + CSSOM &gt; Render Tree &gt; Layout &gt; Paint &gt; Composite
-DOM 트리  + CSSOM 트리
-html css 리소스를 다운받고
-dom트리 + css object model로 변환&lt;/p&gt;
-&lt;p&gt;이것들을 렌더 트리로 조합한여 렌더 트리 만듬&lt;/p&gt;
-&lt;p&gt;레이아웃 페인트 컴포지트 단계를 거쳐 화면에 뿌려줌&lt;/p&gt;
-&lt;p&gt;Render Tree
-각 요소의 컨텐츠와 스타일이 합쳐짐&lt;/p&gt;
-&lt;p&gt;Layout
-위치, 크기를 계산
-어느 위치에 어떤크기의 요소가 있어야 될지를 계산함&lt;/p&gt;
-&lt;p&gt;Paint
-레이아웃 위에 색 채워 넣음&lt;/p&gt;
-&lt;p&gt;Composite
-각 레이어를 합성하는 단계&lt;/p&gt;
-&lt;p&gt;완성된 화면에서 일부 스타일이 바뀔 경우
-변화된 내용을 가지고 브라우저 렌더링 과정이 다시 시작됨(Reflow)&lt;/p&gt;
-&lt;p&gt;초당 60fps 으로 애니메이션이 동작하려면
-브라우저 렌더링 과정이 0.016초 정도안에 이루어져야함&lt;/p&gt;
-&lt;p&gt;따라서 브라우저의 렌더링 속도가 늦는 경우는 해당 프레임이 생략되고 부자연스러운 애니메이션이 나타남&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 246px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 123.17073170731707%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAZCAIAAAC+dZmEAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACmUlEQVQ4y5WUbXOaQBDH+f5foO/6DWpfdNo3nek4sXHaaISIGgkIyMmjKCgHt6hAFy7RPFib7vyHOZb73S67C4IU6KKrSf7sue4CXfK0K0Xs6vIvc3x6hH4ubyY6mkBCWQ1G5mZqbk/S1uOHUL7VuqPFrUz6R7+xGi2WQ3slG8FQC8dCaZh0m5Rl9VyHQ1EcihJXjdXOor5hflCqWjXTmUUg3yFs0CThe7jqnYgeauNnPR5Qw36pqtVsxgjJdy/gk0EGaZIhfHI1MATBeVix5Z5+Jc27I+fmIZQUd7harbaNRVHED8o87zyskvv+tHun9XqT64klGZ6yXC4pxYe1FQ0cW9Z52DLJeDgxdQsT5gKAXWNZlhVFcQkeiIN2u02IldZG/cBfRxHGxOBhGB72+0uwoijT6RTjNHC6Xq83mw1f44KnHf0N9jzPMHTbtrE8WCRk8jzfN4Yn8p5T130JmyaHZVnudDqEEIyD2WKqcRzzamEWvNp1qzSt0vVHuNCNJ3h0c9OjCU3TDMMGQRCtI7xFHWEckuJBrbRZZvHIC0KTTVkWQeC7rkPpdptsUHEcZVmKKaPynOHMYd4QLjHTiszBsSEHwbdhbsS2lXo2uAtmk8whGd46uLZS9DQCp/Hj2l9AYIM9p3M9FmBXbhMGeZHvyldicHjrxP35vkqzXUJBwKkFYJj28cM4ClN962xUNe8CAvaAMXyl+gN8Zc1XdcYQxubh/Al1AwDO7uAjedaw+TgFp8ivHv9fZGA5QM4YirG6CuW/I3MYr6LU+/K11R90B4P+UBziCcc4l2Cs22Ff/vhstz6qnz7Mr3+Ov8kt/BHxKr4HLsR22vuedlp0OnF/L66wI++C8e1xWzN/1dOfsLpcbawlUn8AKZOLZqusjL0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;missed_frame&quot;
-        title=&quot;missed_frame&quot;
-        src=&quot;/static/cdcb15c53d53e0cd1ebb26cff2c9d191/92252/missed_frame.png&quot;
-        srcset=&quot;/static/cdcb15c53d53e0cd1ebb26cff2c9d191/92252/missed_frame.png 246w&quot;
-        sizes=&quot;(max-width: 246px) 100vw, 246px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;
-1개의 프레임 동안 정상적으로 reflow가 일어난 경우
-애니메이션이 부드럽게 진행되지만&lt;/p&gt;
-&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 664px; &quot;
-    &gt;
-      &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 49.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABbklEQVQoz41R2XKkIBTl/z8pz3mfTJJKWlAbW2RxG1sEW9agmaQ6bzl16nAv3K0ugPSiV//aqetlz0beMtpeUEMQVwMZOe4IX3oycVZDht95dWL4lJRXWXN+A86ZeR3HuTObsd67pokZDA1zwc161KuMIQbvA75EWMS8jOjQvAwQgW5oX+Ff0VMp5XrbLCExywLntKVv6LkbhZSLXpXFOOR5KAp/aKJFCAzDQOpaK621uhnjaBNhFgUXbcsYS7d61dt28xWORR7LlLZrokMQCN6Rmk6TvF5TB7M13MLCUiHagVFxnaSc1V62IiY/2wJ/auINlYDSXimrFrtqnwwtzbpYvRh9XC4yGU4ld9mftLRq3nZjsXJaAefMOWutSRpjSIjHEXeEg/fuPQJQB9K2kvp9seFY7x6fduy/jOD3cFKJ0+ulKvkFs7w4p69y37VD+NH53v3sDV/6x4f69DRiNP55yUCa+DfJd8P/h3f+AzklN0ScaPiSAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;missed_frame_2&quot;
-        title=&quot;missed_frame_2&quot;
-        src=&quot;/static/fe0674aab272ef5cd93c6f851cc38a3d/31493/missed_frame_2.png&quot;
-        srcset=&quot;/static/fe0674aab272ef5cd93c6f851cc38a3d/5a46d/missed_frame_2.png 300w,
-/static/fe0674aab272ef5cd93c6f851cc38a3d/0a47e/missed_frame_2.png 600w,
-/static/fe0674aab272ef5cd93c6f851cc38a3d/31493/missed_frame_2.png 664w&quot;
-        sizes=&quot;(max-width: 664px) 100vw, 664px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-    &lt;/span&gt;
-2개의 프레임 동안 1회만 reflow가 일어난 경우는 동일한 프레임을 2회 보여주기 때문에 애니메이션이 부자연스럽게 진행된다.&lt;/p&gt;
-&lt;p&gt;width,height 를 변경하였을 경우&lt;br&gt;
-DOM + CSSOM &gt; Render Tree &gt; Layout &gt; Paint &gt; Composite (Reflow)&lt;/p&gt;
-&lt;p&gt;color 변경한 경우 layout과정 생략 하기
-DOM + CSSOM &gt; Render Tree  &gt; Paint &gt; Composite  (Repaint)&lt;/p&gt;
-&lt;h4 id=&quot;reflow-repaint-모두-피하기-gpu-도움받기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reflow-repaint-%EB%AA%A8%EB%91%90-%ED%94%BC%ED%95%98%EA%B8%B0-gpu-%EB%8F%84%EC%9B%80%EB%B0%9B%EA%B8%B0&quot; aria-label=&quot;reflow repaint 모두 피하기 gpu 도움받기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reflow Repaint 모두 피하기 (GPU 도움받기)&lt;/h4&gt;
-&lt;p&gt;transform, opacity속성 변경한 경우
-DOM + CSSOM &gt; Render Tree &gt; Composite&lt;/p&gt;
-&lt;p&gt;따라서 Reflow를 일으키는 속성이 아닌 Repaint만 일으키는 속성 또는
-transform을 일으키는 속성을 이용하면 더 부드러운 에니메이션 효과를 만들 수 있다.&lt;/p&gt;
-&lt;p&gt;컴포넌트 lazy loading
-Code Splitting&lt;/p&gt;
-&lt;p&gt;컴포넌트 preloading&lt;/p&gt;
-&lt;p&gt;이미지 preloading&lt;/p&gt;
-&lt;p&gt;크롬 Network 탭
-크롬 Performance 탭
-webpack bundle analyzer&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Performance] 웹 성능 최적화 - (1)]]></title><description><![CDATA[웹 성능 최적화 - (…]]></description><link>https://seojihwan.github.io/Web-Performance/performance-1/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/performance-1/</guid><pubDate>Thu, 03 Sep 2020 00:29:41 GMT</pubDate><content:encoded>&lt;h3 id=&quot;웹-성능-최적화---1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94---1&quot; aria-label=&quot;웹 성능 최적화   1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;웹 성능 최적화 - (1)&lt;/h3&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[[Performance] 웹 성능 최적화 - (1)]]></title><description><![CDATA[웹 성능 최적화 - (…]]></description><link>https://seojihwan.github.io/Web-Performance/performance-1/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/performance-1/</guid><pubDate>Thu, 03 Sep 2020 00:29:41 GMT</pubDate><content:encoded>&lt;h3 id=&quot;웹-성능-최적화---1&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%B9-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94---1&quot; aria-label=&quot;웹 성능 최적화   1 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;웹 성능 최적화 - (1)&lt;/h3&gt;
 &lt;hr&gt;
 &lt;p&gt;왜 성능 최적화를 할줄 알아야 하는가?&lt;/p&gt;
 &lt;ol&gt;
