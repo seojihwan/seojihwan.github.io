@@ -39,6 +39,7 @@ function reducer(state = { counter: 0 }, action) {
 reducer는 동기적으로 동작하기 때문이다.
 
 위의 코드를 보면 fetch-user라는 action을 reducer에 전달해주면,
+
 api함수가 호출될 것이다. 
 
 
@@ -49,11 +50,13 @@ api('/api/v1/users/1', users => {
       });
 ```
 비동기 콜백안에 있는 state값은 클로저로 접근할 수 있지만 현재의 상태가 아닌 과거의 상태가 될것이다.
+
 api함수를 호출해서 state를 바꾸어 준다면 api함수가 시작된 후 끝날 때 까지 발생한 dispatch들은 api함수가 끝난 후 덮어씌워져 사라질 것이다.
 
 따라서 비동기적인 작업은 reducer를 통해 처리할 수 없다.
 
 이점을 어떻게 해결해야 할까??
+
 reducer 밖에서 처리 해야할 필요가 있다.
 
 `미들웨어`를 통해 해결해 보자
@@ -70,7 +73,9 @@ function dispatchAndLog(store, action) {
 }
 ```
 위의 방식으로 로깅 할 수 있지만 추후에 코드의 수정이 필요할 수 있다.
+
 코드 수정 => 다시 빌드 => QA => 배포 
+
 막대한 비용이 발생하게 된다.
 
 
@@ -110,6 +115,7 @@ const logger = (store) => (next) => (action) => {
 };
 ```
 logger라는 미들웨어는 action.type을 확인하면 next를 보류하고 api호출이 끝났을 때 응답 값을 next함수로 전달한다.
+
 api호출이 끝난 이후에 dispatch를 호출하기 때문에 비동기 업데이트가 가능해졌다.
 
 ```js
@@ -124,6 +130,7 @@ const store = createStore(reducer, [logger, monitor]);
 
 ```
 또한 action.type을 알려주는 로깅 또한 미들웨어로 사용가능하다.
+
 만들어진 미들웨어들을 createStore에 인자 전달해주면 action이 미들웨어들을 따라 흘러 진행된다.
 
 
@@ -185,7 +192,7 @@ createStore에 reducer와 미들웨어들을 인자로 전달하여 실행한다
 
 redux.js
 ```js
-middlewares = Array.from(middlewares).reverse();
+  middlewares = Array.from(middlewares).reverse();
   let lastDispatch = store.dispatch;
 
   middlewares.forEach((middleware) => {
@@ -195,9 +202,13 @@ middlewares = Array.from(middlewares).reverse();
   return { ...store, dispatch: lastDispatch };
 ```
 lastDispatch의 초기값은 store.dispatch이고, 전달 받은 미들웨어들은 Array.Prototype.reverse()를 통해 역순으로 호출한다.
+
 미들웨어로 logger와 monitor를 주었으므로 lastDispatch 값은
+
 lastDispatch = store.dispatch
+
 lastDispatch = monitor(store)(store.dispatch)
+
 lastDispatch = logger(store)(monitor(store)(store.dispatch))로 변할것이다.
 
 ```js
@@ -206,10 +217,13 @@ store.dispatch({
 });
 ```
 index.js에서 redux에서 가져온 dispatch를 실행해보자.
+
 이걸 분석해보면 logger(store) => (next) => (action){...} 커링 함수의 next로는 monitor(store)(store.dispatch) 값이 해당하고
+
 action으로는 {type: "inc"}를 전달했음을 알수 있다.
 
 따라서 logger => monitor => store.dispatch(원본) 으로 action이 흐르게 됨을 알 수 있을 것이다.
 
 즉 redux에서는 커링을 이용하여 주어진 미들웨어 순서대로 next(다음에 처리할 미들웨어)를 설정한다.
+
 action이라는 데이터를 dispatch에 전달하여 실행하면 정해진 미들웨어 순서로 action이 흐르면서 데이터가 처리됨을 이해할 수 있었다.
