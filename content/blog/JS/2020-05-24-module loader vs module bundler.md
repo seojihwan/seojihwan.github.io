@@ -23,11 +23,11 @@ ES6이전의 ES5에서는 자바스크립트에서 공식적으로 정의된 mod
 대표적인 2가지 module loader로 다음과 같은 format을 지원한다.
 
 - RequireJS: AMD format
-- SystemJS: AMD,CommonJS,UMD, System.register format
+- SystemJS: AMD, CommonJS, UMD, System.register format
 
 ##### module bundlers: build time에 여러 module들을 하나의 file로 통합하여 bundle file을 생성한다.
 
 module loader가 runtime에 필요한 파일을 다운로드 하고 메인파일을 해석하는 것과 달리 module bundler는 bundle을 load한다. module bundler는 여러 module을 통합하여 불러오기 때문에 module loader을 대체할 수 있지만, 때때로 사이즈가 큰 bundle file을 불러올 때는 성능저하가 일어 날 수 있으므로, loader가 더 나은 성능을 보여줄 경우도 있다.
 
-- Browerify: CommonJS modules
+- Browserify: CommonJS modules
 - Webpack: AMD, CommonJS, ES6 modules
