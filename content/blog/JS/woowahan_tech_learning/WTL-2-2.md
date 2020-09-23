@@ -193,3 +193,4 @@ main2();
 위 두 코드는 모두 시작과 끝의 메시지가 3초 후에 나타나는 코드이다.
 generator는 프로미스 객체이든 value이든 yield를 사용할 수 있지만 await는 프로미스 객체에 대해서만 사용가능하다.
 async await는 generator로 만들어졌다.
+
