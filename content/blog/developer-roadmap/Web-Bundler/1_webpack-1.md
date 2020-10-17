@@ -117,9 +117,5 @@ CLI 명령어로 사용할 수 있다.
 ```
 ![image](./img/mode_option.png)
 
-- Brower Compatibility
-webpack은 ES5를 준수 하는 모든 브라우저를 지원한다.
 
-따라서 import 대신 require를 사용해야한다.
-```   
 

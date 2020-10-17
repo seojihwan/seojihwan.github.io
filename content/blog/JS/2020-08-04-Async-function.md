@@ -58,7 +58,7 @@ var sequentialStart = async function () {
 };
 ```
 
-위의 sequentialStart함수는 async 함수로 선언되어 있고 위의 Description처럼 A와 B는 각각 완료가 된이후에 async함수가 진행될것이다.
+위의 sequentialStart함수는 async 함수로 선언되어 있고 위의 Description처럼 A와 B는 순차적으로 호출, 종료될 것이다.
 
 ```js
 sequentialStart() 
@@ -86,13 +86,14 @@ var concurrentStart = async function () {
 };
 ```
 
-sequentialStart과는 달리 promise를 생성하는 A B에 await가 없기 때문에 promise를 생성한 후 각각의 timer는 동시에 비동기로 수행된다.
+sequentialStart과는 달리 promise를 생성하는 A B에 await가 없기 때문에 promise를 생성한 후 각각의 timer는 동시에 나란히 수행된다.
 
 따라서 B가 먼저 promise가 완료될 것이다.
-생성된 promise를 호출할 때 await가 붙었기 때문에 promise<pending>으로 출력 되지않고 완료된 A 그리고 완료된 B가 순차적으로 출력될 것이다.
+생성된 promise를 호출할 때 await가 붙었기 때문에 promise<pending>으로 A가 출력 되지않고 A가 완료되길 기다렸다가 promise<number>를 출력 될 것이다.
+미리 완료되어 있던 B는 A가 호출되자마자 그 다음으로 출력될 것이다.
 
 B는 A보다 빠르게 resolved되지만 완료된 A의 value인 20이 먼저 출력될 것이다. 
-또한 전체 처리시간은 2 + 1 이 아닌 2초임을 이해해야한다.
+또한 전체 처리시간은 `2 + 1 = 3초가 아닌 2초`임을 이해해야한다.
 
 ```js
 concurrentStart()
@@ -145,9 +146,9 @@ var parallel = function () {
 };
 ```
 
-마지막으로 parallel은 promise.then을 통해 각각의 과정을 비동기 처리 한 것이다.
+마지막으로 parallel은 promise.then을 비동기 호출한 함수의 응답을 처리한 것이다.
 
-1초후 B가먼저 메시지를 출력하고, 늦게 완료된 A가 출력된다.
+1초후 B가먼저 메시지를 출력하고, B가 출력된 다음 1초 후에 늦게 완료된 A가 출력된다.
 
 ```js
 parallel()
