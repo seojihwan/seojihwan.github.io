@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 17 Oct 2020 12:32:45 GMT</lastBuildDate><item><title><![CDATA[[CS] Process vs Thread]]></title><description><![CDATA[프로세스: 실행 중인 프로그램 프로그램을 실행하면 프로세스는 프로그램에 기록된 작업을 수행한다.
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 18 Oct 2020 14:59:07 GMT</lastBuildDate><item><title><![CDATA[[CS] 데이터베이스 정규화]]></title><description><![CDATA[https://en.wikipedia.org/wiki/Database_normalization…]]></description><link>https://seojihwan.github.io/CS/DB/Process vs Thread/</link><guid isPermaLink="false">https://seojihwan.github.io/CS/DB/Process vs Thread/</guid><pubDate>Sun, 18 Oct 2020 23:59:17 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Database_normalization&quot;&gt;https://en.wikipedia.org/wiki/Database_normalization&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;데이터 베이스 정규화: 데이터의 중복을 줄이고, 데이터 무결성 향상 시키기 위한 과정&lt;/p&gt;
+&lt;p&gt;데이터 무결성: 데이터의 정확성과 일관성을 유지 + 보증
+개체 무결성: 모든 테이블이 pk를 가져야하며 pk는 고유해야 한다 + (not null).
+참조 무결성: 모든 외래 키 값(FK)은 특정 테이블의 기본 키 값(PK)을 참조
+범위 무결성: 각 열의 값은 정위된 범위 또는 형식에 유효한 값을 가져야한다.&lt;/p&gt;
+&lt;p&gt;제1 정규화: 각각의 속성에는 값이 하나만 있어야 한다. (Atomic)
+제2 정규화: 기본키가 아닌 모든 속성 들이 기본키에 완전 함수적 종속이 되어야 한다.
+즉 기본키가 아닌 후보키에 의해 속성들이 결정되어서는 안된다.&lt;/p&gt;
+&lt;p&gt;만약 기본키가 아닌 후보키에 의해 속성이 결정된다면, 해당 후보키를 기본키로 사용하고, 결정되는 속성을 따로 테이블로 분리하여 제2 정규화를 만족시킬 수 있다.
+(&lt;a href=&quot;https://3months.tistory.com/193&quot;&gt;https://3months.tistory.com/193&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;제 3정규화: 기본키를 제외한 속성에 의해 이행적 함수 종속이 없어야 한다.
+A-&gt;B,C에서 (A(기본키)가 B,C속성을 결정하는 상황에서)
+만약 B -&gt; C라면 이행적 함수 종속이다.&lt;/p&gt;
+&lt;p&gt;A-&gt;B 테이블과 B-&gt; C 테이블로 분리하여 3정규화를 만족시킬 수 있다.&lt;/p&gt;
+&lt;p&gt;BCNF: 모든 결정자가 후보키여야 한다.&lt;/p&gt;
+&lt;p&gt;A,B -&gt; C 이고
+C -&gt; B인경우, C가 후보키가 아니라면
+A -&gt; C, C -&gt; B로 테이블을 나누어 BCNF 정규화를 만족시킬 수 있다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[CS] Process vs Thread]]></title><description><![CDATA[프로세스: 실행 중인 프로그램 프로그램을 실행하면 프로세스는 프로그램에 기록된 작업을 수행한다.
 메모리 공간에 프로세스가 올라가게 되고 프로세스는 크게 4가지 섹션으로 나눌 수 있다. 프로세스의…]]></description><link>https://seojihwan.github.io/CS/OS/Process vs Thread/</link><guid isPermaLink="false">https://seojihwan.github.io/CS/OS/Process vs Thread/</guid><pubDate>Sat, 17 Oct 2020 18:10:36 GMT</pubDate><content:encoded>&lt;h3 id=&quot;프로세스-실행-중인-프로그램&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EC%8B%A4%ED%96%89-%EC%A4%91%EC%9D%B8-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8&quot; aria-label=&quot;프로세스 실행 중인 프로그램 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;프로세스: 실행 중인 프로그램&lt;/h3&gt;
 &lt;p&gt;프로그램을 실행하면 프로세스는 프로그램에 기록된 작업을 수행한다.
 메모리 공간에 프로세스가 올라가게 되고 프로세스는 크게 4가지 섹션으로 나눌 수 있다.&lt;/p&gt;
