@@ -1,17 +1,14 @@
 ---
-title: '[Web-Bundler] webpack'
+title: '[Web-Bundler] webpack - 1'
 date: 2020-09-07 19:08:00
 category: 'developer-roadmap'
 draft: false
 ---
 
-
-### webpack
-
-
 https://webpack.js.org/concepts/
 
-Core Concepts
+## webpack Core Concepts
+
 - Entry: 웹팩이 사용할 시작점
 
 `webpack.config.js`: 웹팩 설정 파일
@@ -59,7 +56,7 @@ https://nodejs.org/api/path.html#path_path_resolve_paths
 
 기본적으로 path.resolve()는 해당 모듈의 위치를 가리킨다.
 
-- Loaders
+- Loaders:
 웹팩은 JS와 JSON files들만 이해하지만, Loader는 웹팩이 다른 유형의 파일들도 유효한 모듈로 변환할 수 있도록 도와준다.
 
 ```js
@@ -81,7 +78,7 @@ module.rules를 통해 test에는 적용될 파일의 확장자, use는 사용�
 
 .txt확장자의 파일들을 import또는 require()를 통해 가져와 bundle 파일에 추가하기 전에 loader를 통해 변형시킨다.
 
-- Plugins
+- Plugins:
 플러그인을 활용하여 번들 최적화, asset, environment variables들을 관리한다.
 
 ```js
