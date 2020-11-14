@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 06 Nov 2020 13:31:23 GMT</lastBuildDate><item><title><![CDATA[[Web-Bundler] webpack - 2 ]]></title><description><![CDATA[webpack loader https://webpack.js.org/loaders/
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 14 Nov 2020 16:12:37 GMT</lastBuildDate><item><title><![CDATA[[Web-Authentication] JWT]]></title><description><![CDATA[JWT: JSON Web Token 
+JWT를 보면 인코딩된 결과 값이 .으로 구분되는 것을 확인할 수 있다. 헤더와 페이로드는 Base64Url 인코딩 되고 서명 값은 비밀키와 함께 HMAC알고리즘을 통해 암호화된다. 출처: https://jwt…]]></description><link>https://seojihwan.github.io/developer-roadmap/Web-Authentication/JWT/</link><guid isPermaLink="false">https://seojihwan.github.io/developer-roadmap/Web-Authentication/JWT/</guid><pubDate>Sun, 15 Nov 2020 00:57:24 GMT</pubDate><content:encoded>&lt;h3 id=&quot;jwt-json-web-token&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#jwt-json-web-token&quot; aria-label=&quot;jwt json web token permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;JWT: JSON Web Token&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1200px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA3UlEQVQoz5WS627DIAyF8/4POfWyqZoaKkIwNuDLTNVqaqO12qeDf4CPbVlMzB1L7pWUm/Tm0WXcVcTMAGBJCYlqrcwsj0yqKp8kR+w75EMZ2kM7lprUzcpi1BTI0+wRv5lE9DzbfLE52PliIVgMdkq6tJHBvQuS1W4bhtkP25Dc41U3fNraqo5M2TJt5/mt7VVYuFiLxvBH59dm9VVmk/ZP89g2lhAjNWRuT/Te35gT4EdYTxG+Y44rZLiRcyaid50LfkXYRTzEklYoW/MLfDxvvgDFQsX/yh1E9KcfzPlMqQE52u0AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;jwt&quot;
+        title=&quot;jwt&quot;
+        src=&quot;/static/4176d25e00287647fcebab11a89b8b93/c1b63/jwt.png&quot;
+        srcset=&quot;/static/4176d25e00287647fcebab11a89b8b93/5a46d/jwt.png 300w,
+/static/4176d25e00287647fcebab11a89b8b93/0a47e/jwt.png 600w,
+/static/4176d25e00287647fcebab11a89b8b93/c1b63/jwt.png 1200w,
+/static/4176d25e00287647fcebab11a89b8b93/c2d9c/jwt.png 1326w&quot;
+        sizes=&quot;(max-width: 1200px) 100vw, 1200px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+JWT를 보면 인코딩된 결과 값이 .으로 구분되는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;헤더와 페이로드는 Base64Url 인코딩 되고 서명 값은 비밀키와 함께 HMAC알고리즘을 통해 암호화된다.&lt;/p&gt;
+&lt;p&gt;출처: &lt;a href=&quot;https://jwt.io/&quot;&gt;https://jwt.io/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;HAMC함수
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 454px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 20.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAIAAAABPYjBAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAk0lEQVQI1zWNyw6EIBAE/f8vNDGQKK7PCCsohAOwtRr6QIqe6Z7mPM95nvd911rf9+29N8Zs23Zdl3MO/j46jgMHwARYLqU0/IdhWNeV/DubpklKSazve0b4tGMCQohlWQDef7hU5ZwJWGvHcey6jnoCSqm2bVmFP1UceCNNfgSllEIIMUbuUIHDWfkI/11AuQrnB4HD4MvpsG+EAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;HAMC&quot;
+        title=&quot;HAMC&quot;
+        src=&quot;/static/0c69ec7605cac8c558bb06c1a1e80994/b3c1d/HAMC.png&quot;
+        srcset=&quot;/static/0c69ec7605cac8c558bb06c1a1e80994/5a46d/HAMC.png 300w,
+/static/0c69ec7605cac8c558bb06c1a1e80994/b3c1d/HAMC.png 454w&quot;
+        sizes=&quot;(max-width: 454px) 100vw, 454px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+출처: &lt;a href=&quot;https://en.wikipedia.org/wiki/HMAC&quot;&gt;https://en.wikipedia.org/wiki/HMAC&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;H = 해쉬함수
+m = 메시지
+K = 비밀 키&lt;/p&gt;
+&lt;p&gt;인코딩 된 서명 값을 알더라도 비밀 키를 모른다면 JWT를 만들어 낼 수 없다.&lt;/p&gt;
+&lt;p&gt;서버는 인코딩 된 토큰 값을 비밀키를 이용해 검증할 수 있으므로 JWT를 인증에 사용한다.&lt;/p&gt;
+&lt;p&gt;Header와 Payload값은 인코딩 되더라도, 쉽게 디코딩 할 수 있으므로, 외부로 노출 될 수 있다.&lt;/p&gt;
+&lt;p&gt;해쉬함수의 역 추적과정이 어려운 이유&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bit dependency: 각각의 출력 비트는 모든 비트 각각에 영향을 받는다.&lt;/li&gt;
+&lt;li&gt;Avalanching: 하나의 입력 비트를 바꾸는 것은 알고리즘의 내부 상태와 최종 결과 값에 큰 영향을 줌&lt;/li&gt;
+&lt;li&gt;Non-linearity: 선형적이지 않은 동작에 의해 출력을 통해 입력 값을 구하기 힘듬&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;출처: &lt;a href=&quot;https://crypto.stackexchange.com/questions/45377/why-cant-we-reverse-hashes&quot;&gt;https://crypto.stackexchange.com/questions/45377/why-cant-we-reverse-hashes&lt;/a&gt;
+&lt;a href=&quot;https://base64.guru/learn/base64-algorithm/encode&quot;&gt;https://base64.guru/learn/base64-algorithm/encode&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;base64-encode&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#base64-encode&quot; aria-label=&quot;base64 encode permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;base64 Encode&lt;/h2&gt;
+&lt;p&gt;8비트 바이트를 6비트 바이트로 변환하는 인코딩으로 모든 데이터를 일반 텍스트로 변환할 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;변환-과정-예시&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B3%80%ED%99%98-%EA%B3%BC%EC%A0%95-%EC%98%88%EC%8B%9C&quot; aria-label=&quot;변환 과정 예시 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;변환 과정 예시&lt;/h3&gt;
+&lt;h4 id=&quot;1문자열을-문자단위로-구분&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%84-%EB%AC%B8%EC%9E%90%EB%8B%A8%EC%9C%84%EB%A1%9C-%EA%B5%AC%EB%B6%84&quot; aria-label=&quot;1문자열을 문자단위로 구분 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1.문자열을 문자단위로 구분&lt;/h4&gt;
+&lt;p&gt;“ABC” =&gt; A, B, C&lt;/p&gt;
+&lt;h4 id=&quot;2각-문자를-아스키-테이블에-대응되는-이진-값으로-변환&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2%EA%B0%81-%EB%AC%B8%EC%9E%90%EB%A5%BC-%EC%95%84%EC%8A%A4%ED%82%A4-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%97%90-%EB%8C%80%EC%9D%91%EB%90%98%EB%8A%94-%EC%9D%B4%EC%A7%84-%EA%B0%92%EC%9C%BC%EB%A1%9C-%EB%B3%80%ED%99%98&quot; aria-label=&quot;2각 문자를 아스키 테이블에 대응되는 이진 값으로 변환 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2.각 문자를 아스키 테이블에 대응되는 이진 값으로 변환&lt;/h4&gt;
+&lt;p&gt;01000001 (65)
+01000010 (66)
+01000011 (67)&lt;/p&gt;
+&lt;h4 id=&quot;3-전부-합친-후에-6비트-단위로-구분&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EC%A0%84%EB%B6%80-%ED%95%A9%EC%B9%9C-%ED%9B%84%EC%97%90-6%EB%B9%84%ED%8A%B8-%EB%8B%A8%EC%9C%84%EB%A1%9C-%EA%B5%AC%EB%B6%84&quot; aria-label=&quot;3 전부 합친 후에 6비트 단위로 구분 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 전부 합친 후에 6비트 단위로 구분&lt;/h4&gt;
+&lt;p&gt;010000010100001001000011&lt;/p&gt;
+&lt;p&gt;010000
+010100
+001001
+000011&lt;/p&gt;
+&lt;h4 id=&quot;4-prefix인-00을-맨앞에-붙임&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-prefix%EC%9D%B8-00%EC%9D%84-%EB%A7%A8%EC%95%9E%EC%97%90-%EB%B6%99%EC%9E%84&quot; aria-label=&quot;4 prefix인 00을 맨앞에 붙임 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. prefix인 00을 맨앞에 붙임&lt;/h4&gt;
+&lt;p&gt;6비트 단위로 구분되지 않는 경우 마지막 그룹에는 subfix로 0을 뒤에 채움&lt;/p&gt;
+&lt;p&gt;00010000
+00010100
+00001001
+00000011&lt;/p&gt;
+&lt;h4 id=&quot;5-base64-table에-따라-변환&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-base64-table%EC%97%90-%EB%94%B0%EB%9D%BC-%EB%B3%80%ED%99%98&quot; aria-label=&quot;5 base64 table에 따라 변환 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. base64 Table에 따라 변환&lt;/h4&gt;
+&lt;p&gt;결과값: QUJD&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 399px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 98.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACz0lEQVQ4y12TiZKiShRE5/8/bWjt6UYWZZV930Uo1H4H7AnndUVAVEDlzbyZt359bev+dxnG6WQYB1m2bdswDNd1NU33PP94PGqa1g8XDt9u9/vjwebX1/8XYOlt977fB4GvqurhoBx4VM09u7vdrtvAjw35Db5erxSGkneW51maxnFiGmaapFVV+b6HCs/zmrZ1HbYOJTnwDW7qmuq6psmy7Lju7k3Sj0dJkkzTVJQDKhRFORknTdel378t297v92EUfYP7vhvH63Uc4yRFlOM4CNveX4ipqrosinkWZVnalo0vTdM8xa/gYRj6Yei6LgzDZVlQJoTAKmzBgizL+76/3W5xHBumMc8z5e6rZRuYwlXdXIYBMXxVVWWa5vP5zC9d17K8wBT2QRC6Zw8wEh7bWsFd20JL+TCMYP6UP2ch8jzHU01V0iyr65p0oijyfZ9CSZK8ZK/gvoeZQ/M84daCyCgCbJlmWVVt26IyTpJnR0TwYi7LVfZ4uZDTNE2qpiHedmxKYHJRAu5QBDOGiUVUdf0CN02Nbmzz/GBZhCS9Lbe7ZVmYpCoKhtVNjVoMg5lNtOX0V/bW8TiO4PHj81MG9jzxHBs6YiQ3t01kF0XxAhdFXlY1X0l7ul4/Pj7EsgRBwC/XcZumxV4sjMIQOfSVZdkL3DYNlqIHEiFm+SDPYknT1dKz69Iwzk/zzNiGQcixNE1f4HG8+EHAoECC23/+rMxhFPLLNA16ZqSEWBghXdPnafoJTtKExtM0g3nr+R5vYdq2lecFdbchCY6n08+emU7HcQG77plIpDcJ5mdjtmWV+NHU5Azz2fO4BGz+ZR6RzYQxgDDv39/nTeR6vU9HZA/DhaMwczF/jidJUBJmwhDzrKiqWG7PxrhVeVHiKFqYTZJjfrq+4/19JfGANgiJnGHO0uxxv1/GkdpVVV5GLuvKXJVVEidcJ9J6gv8D6apdDqZpBHwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;base64테이블&quot;
+        title=&quot;base64테이블&quot;
+        src=&quot;/static/d415aca64861b192864db5a6e463176b/a307d/base64%ED%85%8C%EC%9D%B4%EB%B8%94.png&quot;
+        srcset=&quot;/static/d415aca64861b192864db5a6e463176b/5a46d/base64%ED%85%8C%EC%9D%B4%EB%B8%94.png 300w,
+/static/d415aca64861b192864db5a6e463176b/a307d/base64%ED%85%8C%EC%9D%B4%EB%B8%94.png 399w&quot;
+        sizes=&quot;(max-width: 399px) 100vw, 399px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+출처: &lt;a href=&quot;https://stackabuse.com/encoding-and-decoding-base64-strings-in-python/&quot;&gt;https://stackabuse.com/encoding-and-decoding-base64-strings-in-python/&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&quot;base64-url-인코딩&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#base64-url-%EC%9D%B8%EC%BD%94%EB%94%A9&quot; aria-label=&quot;base64 url 인코딩 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;base64 url 인코딩:&lt;/h4&gt;
+&lt;p&gt;base64의 64의 인코딩에서 +와 /는 url에서 잘못 해석될 수 있기 때문에 -와 _로 대체한다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 715px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 92%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAIAAADUsmlHAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABwUlEQVQ4y51TS1LjMBDN3SdMzCKZwAWGFWygmJobpCqLnAEuECaRulttWz87zFPMp4AUoeiNLUtP79Pt0e2fv6en1XQ2rapqsVhc31z/GI/nZ3Msl8vl5dXVycn413xeTarVanVx8Xsy+Xl2fj6bzu7u7kdN67uuSyk653a7nao2bbvre6d133fiJMaYc25bn1MiIu9Dj/O51EictqUaa22MifCwFEMgZsCMNU7Ve4+rsez61wITwLXHtd6LcyklZnblJfIejJvqph7A2H18W0/MwXtIwrYI70kC+LEEs9aFWUSwBNsbMLxhLwQvDHsFXCREMBedxpi6rkMIyOIAmEWxPchGBuCH25wTE8cUrbHq4Fqh/4BsZuhS3D0IK7JVwTkEhhMv8byjHZidOoXnh4d/qTBbRBViMIeoPoIhClQBcuH5Ke0YRdzA/BmYGEoZgW02m5w7S4aF0efN1hxnhuqmafxrq/BBkRzMHGe2JICVkSICM3pjiTqYfw7sc89gKlPBpc+wyvuWRnz+imfnRDDb6/Uaf4i1hrgI2W63xz0jMHAisGGYS6ukSOAvygYAmeH0EBgTYdrh/Di47x+/Xf8B9rUERy4+vgwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;base64url테이블&quot;
+        title=&quot;base64url테이블&quot;
+        src=&quot;/static/860fd204ecac0bcd0a70cfaf8654efb7/d0c0e/base64UrlTable.png&quot;
+        srcset=&quot;/static/860fd204ecac0bcd0a70cfaf8654efb7/5a46d/base64UrlTable.png 300w,
+/static/860fd204ecac0bcd0a70cfaf8654efb7/0a47e/base64UrlTable.png 600w,
+/static/860fd204ecac0bcd0a70cfaf8654efb7/d0c0e/base64UrlTable.png 715w&quot;
+        sizes=&quot;(max-width: 715px) 100vw, 715px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+출처: &lt;a href=&quot;https://codebeautify.net/base64&quot;&gt;https://codebeautify.net/base64&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Web-Bundler] webpack - 2 ]]></title><description><![CDATA[webpack loader https://webpack.js.org/loaders/
 웹팩의 로더는 js이외의 모든 정적 리소스 파일들을 번들링 해준다. 몇 가지 로더들의 기능을 살펴보자 css-loader https://webpack.js.org…]]></description><link>https://seojihwan.github.io/developer-roadmap/Web-Bundler/webpack-2/</link><guid isPermaLink="false">https://seojihwan.github.io/developer-roadmap/Web-Bundler/webpack-2/</guid><pubDate>Thu, 05 Nov 2020 22:51:00 GMT</pubDate><content:encoded>&lt;h2 id=&quot;webpack-loader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-loader&quot; aria-label=&quot;webpack loader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack loader&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://webpack.js.org/loaders/&quot;&gt;https://webpack.js.org/loaders/&lt;/a&gt;
 웹팩의 로더는 js이외의 모든 정적 리소스 파일들을 번들링 해준다.&lt;/p&gt;
