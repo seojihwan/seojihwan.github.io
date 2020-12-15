@@ -1,5 +1,5 @@
 ---
-title: "[Web] JWT"
+title: "[Web-Authentication] JWT"
 date: 2020-11-15 00:57:24
 category: 'developer-roadmap'
 draft: false
@@ -32,7 +32,7 @@ K = 비밀 키
 Header와 Payload값은 인코딩 되더라도, 쉽게 디코딩 할 수 있으므로, 외부로 노출 될 수 있다.
 
 해쉬함수의 역 추적과정이 어려운 이유
-- Bit dependency: 각각의 출력 비트는 모든 비트 각각에 영향을 받는다.
+- Bit dependency: 각각의 출력 비트는 모든 입력 비트 각각에 영향을 받는다.
 - Avalanching: 하나의 입력 비트를 바꾸는 것은 알고리즘의 내부 상태와 최종 결과 값에 큰 영향을 줌
 - Non-linearity: 선형적이지 않은 동작에 의해 출력을 통해 입력 값을 구하기 힘듬
 
