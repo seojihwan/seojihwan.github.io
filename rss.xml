@@ -1,4 +1,208 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 12 Feb 2021 12:20:05 GMT</lastBuildDate><item><title><![CDATA[[Performance] 렌더링 경로 - (1)]]></title><description><![CDATA[Rendering Path 브라우저가 HTML, CSS, 자바스크립트를 사용하여 화면에 렌더링된 픽셀로 보여주는 과정 객체 모델 생성 DOM, CSSOM 트리 생성 HTML 마크업은 DOM(Document Object Model)으로 변환 CSS…]]></description><link>https://seojihwan.github.io/Web-Performance/rendering_path-1/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/rendering_path-1/</guid><pubDate>Fri, 12 Feb 2021 09:12:33 GMT</pubDate><content:encoded>&lt;h2 id=&quot;rendering-path&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rendering-path&quot; aria-label=&quot;rendering path permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering Path&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Feb 2021 14:18:34 GMT</lastBuildDate><item><title><![CDATA[[Performance] 렌더링 경로 - (2)]]></title><description><![CDATA[Rendering Path - 2 Rendring-Blocking CSS HTML,CSS는 렌더링 차단(blocking) 리소스다 즉, DOM, CSSOM…]]></description><link>https://seojihwan.github.io/Web-Performance/rendering_path-2/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/rendering_path-2/</guid><pubDate>Sat, 13 Feb 2021 13:50:33 GMT</pubDate><content:encoded>&lt;h2 id=&quot;rendering-path---2&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rendering-path---2&quot; aria-label=&quot;rendering path   2 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering Path - 2&lt;/h2&gt;
+&lt;h3 id=&quot;rendring-blocking-css&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rendring-blocking-css&quot; aria-label=&quot;rendring blocking css permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendring-Blocking CSS&lt;/h3&gt;
+&lt;p&gt;HTML,CSS는 렌더링 차단(blocking) 리소스다&lt;/p&gt;
+&lt;p&gt;즉, DOM, CSSOM이 생성될 때까지 브라우저는 컨텐츠를 렌더링하지 않는다.&lt;/p&gt;
+&lt;p&gt;미디어 쿼리를 통해 조건이 성립할 때에만 스타일시트가 다운되도록 설정할 수 있다.&lt;/p&gt;
+&lt;p&gt;우선순위가 낮더라도 조건을 성립하면 브라우저는 스타일시트를 다운받는다.&lt;/p&gt;
+&lt;h3 id=&quot;adding-interactivity-with-javascript&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#adding-interactivity-with-javascript&quot; aria-label=&quot;adding interactivity with javascript permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Adding interactivity with JavaScript&lt;/h3&gt;
+&lt;p&gt;HTML 파서는 스크립트 태그를 만나면 DOM 생성 프로세스를 중지하고 자바스크립트 엔진에 제어 권한을 넘김&lt;/p&gt;
+&lt;p&gt;스크립트를 실행하려는 경우 브라우저가 CSSOM을 다운로드하고 빌드하는 작업을 완료하지 않았다면 브라우저가 CSSOM을 생성할때 까지 스크립트 실행 및 DOM 생성 지연시킨다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;html&quot;&gt;&lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;app.js&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;async&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script&quot;&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;async를 통해 스크립트가 참조되는 시점에 스크립트를 실행할 필요가 없음을 브라우저에게 알려줄 수 있다.&lt;/p&gt;
+&lt;h3 id=&quot;measuring-the-critical-renderging-path&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#measuring-the-critical-renderging-path&quot; aria-label=&quot;measuring the critical renderging path permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Measuring the Critical Renderging Path&lt;/h3&gt;
+&lt;p&gt;좋은 성능은 좋은 측정과 계측이 바탕이 된다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ligth house를 통한 성능 측정: CRP&lt;/li&gt;
+&lt;li&gt;Navigation Timing API 접근방식&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;CRP 최적화의 기회를 파악하고 Navigation Timing API로 코드 작성 후 앱의 실제 성능 모니터링 하는 방법이 좋은 방식이라고 한다.&lt;/p&gt;
+&lt;p&gt;Ligthhouse로 웹 앱 페이지 분석하기&lt;a href=&quot;https://developers.google.com/web/tools/lighthouse&quot;&gt;https://developers.google.com/web/tools/lighthouse&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;위에 대한 내용은 다음 글에서 다루기로 한다.&lt;/p&gt;
+&lt;p&gt;Navigation Timing API와 여러 브라우저 이벤트를 조합해서 임의 페이지의 &lt;code class=&quot;language-text&quot;&gt;실제&lt;/code&gt; CRP를 캡처할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 385px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 80.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAA7DAAAOwwHHb6hkAAACY0lEQVQoz21TW08aURD2/7808UFtKRq1bRrloTVpbBu1lUsUBAsC7n33sHfOXlj2vsvu0gFshJTJyWTOyXzzzcyZ2Zn/J2majkYjQRAkSeI4Lo6jJM38MAmiFM66585WsKqqgNR1HXQYhvCYZXkxn5sTP05mG+ACBPTygERxTNE0HI7nCYK0LCtMZkG84ARm0wlWkO3M67L0mTvTME0zMPK8ALtYZx6Ixg0h12m1Sik1Rq+z4zqHa4x2SylVSr0lle9/eLg2OFwFTcovIVfgH4R8ymgVZFRE82QolB/JUnv4gUAVyTofGecCPmixZwIutYanlHT2NCry/BV8ORSPKfWUkN+3uXdNcvem8+Znc6/eP+5LR130tsXsNshPrLbX6B0O0MdHfgPcRfhyIH5tc6V7qtx6LreIkyfh6JE+fCDLHarUIC4e2Fuoghvf0GqdlIv1tKH7luWOZOvzs7h/192rdw7uuguj1t5v9i8Ixbbcre1cgPOisKYBhXClyfzi8BWtX9HaNaP/5vC3ofzlnjZsL0kTx3Fc13OcKRgvX7XKwPUjw/YpXo+iZNXMWTqzJ75p+36QuEFqTyYcx4qiSFEUDN/GhMEHQvix7SHVhqsx8ZHm6NhECI11HQmCLMuaprEsC8MHw4sx/jdhS/xkGtrTQDWmECWMU2xYkiSCN7MUMHq93mAw6Pf7JElGUbQxYWmWY9t3vFA3XcsJoDagBRKe58EArSiKYRjAb5rmRtorcsBA8Y4bwgJ44WI9oEKghd0C5izLtnT7lXyWAy22PceLERIgQ4IgOp2O53nLvrzKyv8vaFtsiYcT29gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;navigation_timing_api&quot;
+        title=&quot;navigation_timing_api&quot;
+        src=&quot;/static/c70177b3fb146b2239fa1202d5f12546/409e6/navigation_timing_api.png&quot;
+        srcset=&quot;/static/c70177b3fb146b2239fa1202d5f12546/5a46d/navigation_timing_api.png 300w,
+/static/c70177b3fb146b2239fa1202d5f12546/409e6/navigation_timing_api.png 385w&quot;
+        sizes=&quot;(max-width: 385px) 100vw, 385px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;domLoading: 브라우저가 HTML 문서 바이트 파싱 시작&lt;/li&gt;
+&lt;li&gt;dominteractive: 브라우저가 파싱을 완료하고 DOM 생성 완료&lt;/li&gt;
+&lt;li&gt;domContentLoaded: blocking stylesheets이 없는상태 =&gt; 렌더링 트리 생성 가능(?)&lt;/li&gt;
+&lt;li&gt;domComplete: 모든처리(렌더링 트리, 레이아웃, 페인트) 완료, 모든 리소스 다운로드 완료&lt;/li&gt;
+&lt;li&gt;loadEvent: 페이지 최종단계, onload 이벤트 발생&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;analyzing-critical-rendering-path-performance&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#analyzing-critical-rendering-path-performance&quot; aria-label=&quot;analyzing critical rendering path performance permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Analyzing Critical Rendering Path Performance&lt;/h3&gt;
+&lt;p&gt;async를 사용하면 브라우저의 파서가 자바스크립트를 차단 하지않고 CSSOM생성과 같이 파싱된다.&lt;/p&gt;
+&lt;p&gt;domContentLoaded 이벤트가 HTML이 파싱된 후 바로 실행된다.&lt;/p&gt;
+&lt;p&gt;=&gt; 이부분이 이해가 조금 안되는 점은 위의 설명에서는 렌더링 트리 생성이 가능해야 한다고 쓰여져 있지만 아직 CSSOM이 파싱되지 않은 시점이기 때문이다.&lt;/p&gt;
+&lt;p&gt;어쨋든 렌더링 경로를 최적화할 때 서로 다른 리소스의 의존성, 중요도에 따라 최적의 전략을 찾아야 한다.&lt;/p&gt;
+&lt;h3 id=&quot;성능-패턴&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%84%B1%EB%8A%A5-%ED%8C%A8%ED%84%B4&quot; aria-label=&quot;성능 패턴 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;성능 패턴&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 676px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 29.000000000000004%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA40lEQVQY06WP206DQBRF+f8/MuEBxZrGWrCJIBfpOOVamaEMZ4YZLi0Fn7Q+upLzspOVs7c2/YaxZhjHmxA4v1ymv2hCCKWUVKrvVHEIk8jN0HuZ4fF8VqrrZHs8BHHkHnGQJRFK9yiJ9vEHg3qR8zwnhFBKWwG+ZfrWw9ta//TsWW4AVAvh68rdmv7W9JznlWU+vtybG6Mo80Wer+97KeUwjOUJ3ACFKKY1h6ZJ01QITklRfmVVVXDR3Nb+3snm/wB8vQv0J9vYOE4UM1YTWmUJ9ne6Y99hzzgRvBg/1mvTP7gCvKVRf4KPOeMAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;render_pattern_1&quot;
+        title=&quot;render_pattern_1&quot;
+        src=&quot;/static/a6ffd31b9694345bff22d40c4d476e08/9bb7a/render_pattern_1.png&quot;
+        srcset=&quot;/static/a6ffd31b9694345bff22d40c4d476e08/5a46d/render_pattern_1.png 300w,
+/static/a6ffd31b9694345bff22d40c4d476e08/0a47e/render_pattern_1.png 600w,
+/static/a6ffd31b9694345bff22d40c4d476e08/9bb7a/render_pattern_1.png 676w&quot;
+        sizes=&quot;(max-width: 676px) 100vw, 676px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;HTML마크업으로만 이루어진 경우&lt;/p&gt;
+&lt;p&gt;HTML파일이 작을 경우 한 번의 네트워크 왕복으로 전체 문서 가져올 수 있음&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 879px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 24.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA50lEQVQY02WP226DMBBE+f9/qtSLSh6gIbRJaCAQRZRLwJjauzZgO25BqlJVHWkf9mHOzDjTNCmljFaUNG1d6mnUWl+N4Z+0vZRqlNoYo/UgoC5zAQyRc2BCorXW6boOEHtyScPneP3Q5MdxUgJ4tvPicFWdIhQCltd/f3ncevf+68pdPwU7f0Y6MxcRAcUmSv23uGp7QkhdV8V535QRp8XXIvtzf7WYpZQA4nguknNJejavAM6yJNxvvTzPQAyU0kFyzsg4cGuvv+Z/uDlhyegZusHBDZMoy+cu6cGLNncfp0BrdevyDeQ8FzxVcSRVAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;render_pattern_2&quot;
+        title=&quot;render_pattern_2&quot;
+        src=&quot;/static/2905121554d0ae10e0ea38876ca3853c/bcb8c/render_pattern_2.png&quot;
+        srcset=&quot;/static/2905121554d0ae10e0ea38876ca3853c/5a46d/render_pattern_2.png 300w,
+/static/2905121554d0ae10e0ea38876ca3853c/0a47e/render_pattern_2.png 600w,
+/static/2905121554d0ae10e0ea38876ca3853c/bcb8c/render_pattern_2.png 879w&quot;
+        sizes=&quot;(max-width: 879px) 100vw, 879px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+HTML을 파싱하는 중에 CSS파일이 필요함을 알고 요청을 보냄
+네트워크 최소 2번의 왕복 필요&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 892px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 26.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAIAAADKYVtkAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA2ElEQVQY03XPTU+EMBAGYP7/z9KLJqi7NkiA6na7CMWWfgjttpRSixdNjM9hkjnMOzNZCGFZlnVdJ8XZ0C3Ohm0zkxopsVft/arnT9JhyemsRiWo4lTIkXGqzZxZa6WURmsMi+p4xym5Wkdwg8qc9udZG9ohXB1aCIZzmeqlOcLTC2ieCe2zGKOzVmtToy4vIBMqaXHdng5mGuNui//Yh8M3771zTgjBOScDuX8ED0WD38kFlbC4Zf3rHrOln35kv5NSn9aKncxB/VSitv9IwxW4YcPb3yu+AKmwGL8hQOh5AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;render_pattern_3&quot;
+        title=&quot;render_pattern_3&quot;
+        src=&quot;/static/9a34f47b04800aa4515f76bc04d5d802/1568e/render_pattern_3.png&quot;
+        srcset=&quot;/static/9a34f47b04800aa4515f76bc04d5d802/5a46d/render_pattern_3.png 300w,
+/static/9a34f47b04800aa4515f76bc04d5d802/0a47e/render_pattern_3.png 600w,
+/static/9a34f47b04800aa4515f76bc04d5d802/1568e/render_pattern_3.png 892w&quot;
+        sizes=&quot;(max-width: 892px) 100vw, 892px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+브라우저가 HTML을 파싱하는 중 두 리소스를 찾고(CSS와 JS) 동시에 요청함&lt;/p&gt;
+&lt;p&gt;자바스크립트는 파서 차단 리소스(주요 리소스)
+자바스크립트가 CSSOM을 처리하는 것을 방지하기 위해 브라우저가 일시 중지 됨 (CSSOM빌드, 자바스크립트 실행 이후에 DOM의 빌드가 이루어짐)&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 881px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 28.333333333333332%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA/0lEQVQY001Q2W6DMBDk/3+oj02PBEQVAuVygZiQiNKGctjGYGxDahUlzUi7q1nt7KVdruj7Xghxo8Mw3FNKqZRyvkJllNeqqqK0Lz8zYL1E9rqtSzbyn+IYWuvYNXFb0X7IIfDNR//tGbpG7Og7z9St1yDxNMaY6opJF8Z7EEOEcVXXTfVVHEFbZmJkaso8ScG5FEIFwUdlbGRCcI1zTgguG+QnJ5DmdYO6rivyFEbbUxZ0f7dIyaVkk+TLwjdo92SeJ4wxQggT4vjJamNv3Q+YHhKws42Hvb9hA13q/sVLv0lJp3n5DSYYem5k6IXvfZ/PhyB8Xz1ltsMZuxf/Ag3JUFLn153CAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;render_pattern_4&quot;
+        title=&quot;render_pattern_4&quot;
+        src=&quot;/static/81e7c1a5de0a5704639932e5e625d7b8/96658/render_pattern_4.png&quot;
+        srcset=&quot;/static/81e7c1a5de0a5704639932e5e625d7b8/5a46d/render_pattern_4.png 300w,
+/static/81e7c1a5de0a5704639932e5e625d7b8/0a47e/render_pattern_4.png 600w,
+/static/81e7c1a5de0a5704639932e5e625d7b8/96658/render_pattern_4.png 881w&quot;
+        sizes=&quot;(max-width: 881px) 100vw, 881px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+페이지에 포함된 자바스크립트를 차단하지 않기 위해 async 속성 사용&lt;/p&gt;
+&lt;p&gt;스크립트는 더이상 DOM 파싱하는 것을 막지 않고 CSSOM이 빌드되는 것을 기다림
+따라서 domContentLoaded 이벤트는 Build DOM 바로 뒤로 앞당겨짐&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 844px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 32.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAIAAABM9SnKAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAA/klEQVQY01VQDW+CMBTk//8mE1DAKWAzMkCRgcBGKhusXYHy0QGrxSXukr7ca9/du1SaH0Ap7bqOk0m0wzA0dT39gd9UhPwwNvNmvLUSIaQoiqqqC/h2tNZHU4Zp0HY9+caBvfOB9vK81Sx1e1Bta+MZimMoPtiEjsEYk8Zx5NuoQBSn3umMhR1G6JpFHzDCJaQtbbu273mhvSBsuAWU+OFijFGJCPBC4EVZXlLafJVF8nq4nHb4M+KRl9iziL/Qu/g/+MvEN1/zPIe5qz+5qhY7TpwkZwBsWQ5Ms22axeguXox5GcVPIIT4NMze3bUS6nrmeUma+vu9vVpdHsS/4DJNmNlSM0cAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;render_pattern_5&quot;
+        title=&quot;render_pattern_5&quot;
+        src=&quot;/static/8918b6e5ad9b133662c0ef12cef67825/33e10/render_pattern_5.png&quot;
+        srcset=&quot;/static/8918b6e5ad9b133662c0ef12cef67825/5a46d/render_pattern_5.png 300w,
+/static/8918b6e5ad9b133662c0ef12cef67825/0a47e/render_pattern_5.png 600w,
+/static/8918b6e5ad9b133662c0ef12cef67825/33e10/render_pattern_5.png 844w&quot;
+        sizes=&quot;(max-width: 844px) 100vw, 844px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;
+미디어 쿼리 조건에 의해 CSS 스타일시트가 필요하지 않은 경우
+DOM 생성이 완료되자마자 페이지 렌더링이 가능해짐&lt;/p&gt;
+&lt;p&gt;하지만 위의 예는 상황에 따라 가능하다의 정도로 받아들여짐&lt;/p&gt;
+&lt;p&gt;추가로 defer 태그는 DOM의 파싱이 끝난 이후에 자바스크립트를 실행한다.&lt;/p&gt;
+&lt;p&gt;문서를 읽고 글을 작성해 보았지만 아직 모르는 개념이 많아 이해하지 못한 것 같다.&lt;/p&gt;
+&lt;p&gt;async 와 defer를 지원하지 않는 브라우저들도 있지만, 일단 무조건적으로 script defer =&gt; script async =&gt; script를 사용하면 이점이 있지 않을까?? 라는 의문이 들었다.&lt;/p&gt;
+&lt;h3 id=&quot;sciprt-async-defer의-비교&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#sciprt-async-defer%EC%9D%98-%EB%B9%84%EA%B5%90&quot; aria-label=&quot;sciprt async defer의 비교 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;sciprt, async, defer의 비교&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 816px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 104.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAIAAADJt1n/AAAACXBIWXMAAA7DAAAOwwHHb6hkAAACQ0lEQVQ4y5VT207bQBDN//9B1T73vYWqKglrJ1AFktLykCrlJhSgkPiyF9uzN6/XnSUBKRBQGR2Px+s5a++cmQ6AvLtLGBft261jrZVKIaACKVVVwb3JKhhUD89N4zeQORfzRZKkWZKmeFss0izLs5ymKTqGV55TyljjN5GNMlUJ+Nl7SAmyaWzbYmrTeu+d867xSH2GQJ6ISZd1YxYRRoggu3PS7f2K49+ETL4fTKan58PZYY/1CCWP6NHekA6dcx3rrfZ6CdPqQsuDAzYaFYdjOI5P2M43evZHt7Vu1GNayPTGt76z+v0NJ2pxW71YuAperPbzJSxs06BvN9VonYz6YLUp40mSoVhv01kbU0IJEoqyBCWlVuhBBa9Qf6lw99rV4W/WcU9WVlcGYQDbJcROa6dNLRXq9EpFAnlaTCMR7Ym9JfpssDUbbF/tfboakIvR5eXN0e3xoOg/JoQc0R+LcZCqMEWiklSliNxkf8V8O7740p9tDW52v46vtj7PJj9Tm6dylYPAfKopdlDnlXp4PO31dVOU/yWVDw25Zqv1ED1FIGNJcRK4KObzBGv7Rqm0LgqcDJw+MMbY2i4N47pGH4D25JsrMjLzlHIqaMbyjGZJjo95xhktBEeU6OULzdMBDbSktGR5SVnFOHAwVDnhWmm9BAtQg6whBA9YdsjDSPJuzOOIR7GIuhl5/2Pnw9Huu1Hv43QnEoTwAHyLwKBP+5WtltV9KlVdN2en8vzMnJ6Yu1uzLl04rTOG7++LYZjnfy12q0AekOtrAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;script_vs_async_vs_defer&quot;
+        title=&quot;script_vs_async_vs_defer&quot;
+        src=&quot;/static/b07e74f4fcf400e540ed2be027f229ce/b4098/script_vs_async_vs_defer.png&quot;
+        srcset=&quot;/static/b07e74f4fcf400e540ed2be027f229ce/5a46d/script_vs_async_vs_defer.png 300w,
+/static/b07e74f4fcf400e540ed2be027f229ce/0a47e/script_vs_async_vs_defer.png 600w,
+/static/b07e74f4fcf400e540ed2be027f229ce/b4098/script_vs_async_vs_defer.png 816w&quot;
+        sizes=&quot;(max-width: 816px) 100vw, 816px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&quot;의문점-정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9D%98%EB%AC%B8%EC%A0%90-%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;의문점 정리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;의문점 정리&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;domContentLoaded의 정확한 역활&lt;/li&gt;
+&lt;li&gt;domContentLoaded에서 CSSOM이 빌드되지 않은 경우(blocking CSS만 없는경우) 렌더 트리를 형성할 수 없지 않을까?&lt;/li&gt;
+&lt;li&gt;script, async, defer 에서 defer이 제일 좋은 것 아닌가?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;출처:&lt;a href=&quot;https://developers.google.com/web/fundamentals/performance/critical-rendering-path&quot;&gt;https://developers.google.com/web/fundamentals/performance/critical-rendering-path&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html&quot;&gt;https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Performance] 렌더링 경로 - (1)]]></title><description><![CDATA[Rendering Path 브라우저가 HTML, CSS, 자바스크립트를 사용하여 화면에 렌더링된 픽셀로 보여주는 과정 객체 모델 생성 DOM, CSSOM 트리 생성 HTML 마크업은 DOM(Document Object Model)으로 변환 CSS…]]></description><link>https://seojihwan.github.io/Web-Performance/rendering_path-1/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/rendering_path-1/</guid><pubDate>Fri, 12 Feb 2021 09:12:33 GMT</pubDate><content:encoded>&lt;h2 id=&quot;rendering-path&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#rendering-path&quot; aria-label=&quot;rendering path permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Rendering Path&lt;/h2&gt;
 &lt;p&gt;브라우저가 HTML, CSS, 자바스크립트를 사용하여 화면에 렌더링된 픽셀로 보여주는 과정&lt;/p&gt;
 &lt;h3 id=&quot;객체-모델-생성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B0%9D%EC%B2%B4-%EB%AA%A8%EB%8D%B8-%EC%83%9D%EC%84%B1&quot; aria-label=&quot;객체 모델 생성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;객체 모델 생성&lt;/h3&gt;
 &lt;p&gt;DOM, CSSOM 트리 생성&lt;/p&gt;
@@ -36,7 +240,7 @@
 &lt;/ol&gt;
 &lt;p&gt;DOM트리는 문서 마크업의 속성 및 관계&lt;/p&gt;
 &lt;h3 id=&quot;cssom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#cssom&quot; aria-label=&quot;cssom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;CSSOM&lt;/h3&gt;
-&lt;p&gt;브라우저가 DOM을 생성하는 동안 CSS에 대한 리소스를 요청하고 마찬가지의 과정을 거친다.
+&lt;p&gt;브라우저가 DOM을 생성하는 동안(head 섹션에서 link 태그를 접한 시점!) CSS에 대한 리소스를 요청하고 마찬가지의 과정을 거친다.
 바이트 → 문자열 → 토큰 → 노드 → DOM&lt;/p&gt;
 &lt;p&gt;하향식 규칙을 적용&lt;/p&gt;
 &lt;p&gt;&lt;span
