@@ -103,10 +103,12 @@ async 와 defer를 지원하지 않는 브라우저들도 있지만, 일단 무�
 
 
 ### 의문점 정리
-- domContentLoaded의 정확한 역활
+- domContentLoaded의 정확한 역할 
+-> HTML의 로드와 파싱이 끝난 시점
 - domContentLoaded에서 CSSOM이 빌드되지 않은 경우(blocking CSS만 없는경우) 렌더 트리를 형성할 수 없지 않을까?
 - script, async, defer 에서 defer이 제일 좋은 것 아닌가?
-
+-> 초기 렌더링에 영향을 주는 스크립트는 바로 실행이 되야 하기 때문에 async, defer를 사용할 수 없다.
+따라서 초기 렌더링할 컨텐츠에 영향을 주지 않는 스크립트만 지연시키는 것이다.
 출처:https://developers.google.com/web/fundamentals/performance/critical-rendering-path
 
 https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html
