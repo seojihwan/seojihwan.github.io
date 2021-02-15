@@ -1,5 +1,5 @@
 ---
-title: "[Performance] Optimizing_javascript - (1)"
+title: "[Performance] Optimizing javascript - (1)"
 date: 2021-02-14 22:38:09
 category: 'Web-Performance'
 draft: false
