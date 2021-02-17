@@ -1,4 +1,142 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 15 Feb 2021 13:07:26 GMT</lastBuildDate><item><title><![CDATA[[Performance] Optimizing javascript - (2)]]></title><description><![CDATA[Reduce JavaScript payloads with code splitting 어플리케이션을 로드했을때 필요한 초기 route에 관련한 코드만 보내기 위해 자바스크립트 번들을 분리해라 위의 예시에서 moduleA는 someFunction…]]></description><link>https://seojihwan.github.io/Web-Performance/optimizing_javascript-2/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/optimizing_javascript-2/</guid><pubDate>Mon, 15 Feb 2021 18:26:14 GMT</pubDate><content:encoded>&lt;h3 id=&quot;reduce-javascript-payloads-with-code-splitting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reduce-javascript-payloads-with-code-splitting&quot; aria-label=&quot;reduce javascript payloads with code splitting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reduce JavaScript payloads with code splitting&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[서지환의 블로그]]></title><description><![CDATA[Blog posted about ...]]></description><link>https://seojihwan.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 17 Feb 2021 00:46:16 GMT</lastBuildDate><item><title><![CDATA[[woowa-course] 리뷰 피드백 정리 - (1)]]></title><description><![CDATA[우테코 크루인 하루의 블로그 글을 보면서 리뷰정리를 잘 해둔 것을 보았다.
+나도 매번 리뷰 기회를 소중히 살려보고 싶어 리뷰를 정리해보았다. 계산기 미션 https://github.com/woowacourse/javascript-calculator…]]></description><link>https://seojihwan.github.io/woowa-course/review-1/</link><guid isPermaLink="false">https://seojihwan.github.io/woowa-course/review-1/</guid><pubDate>Wed, 17 Feb 2021 08:57:33 GMT</pubDate><content:encoded>&lt;p&gt;우테코 크루인 하루의 블로그 글을 보면서 리뷰정리를 잘 해둔 것을 보았다.
+나도 매번 리뷰 기회를 소중히 살려보고 싶어 리뷰를 정리해보았다.&lt;/p&gt;
+&lt;h2 id=&quot;계산기-미션&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%84%EC%82%B0%EA%B8%B0-%EB%AF%B8%EC%85%98&quot; aria-label=&quot;계산기 미션 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;계산기 미션&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/woowacourse/javascript-calculator&quot;&gt;https://github.com/woowacourse/javascript-calculator&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;공통-피드백-정리&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B3%B5%ED%86%B5-%ED%94%BC%EB%93%9C%EB%B0%B1-%EC%A0%95%EB%A6%AC&quot; aria-label=&quot;공통 피드백 정리 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;공통 피드백 정리&lt;/h3&gt;
+&lt;h4 id=&quot;1-주석에-담아야할-내용&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#1-%EC%A3%BC%EC%84%9D%EC%97%90-%EB%8B%B4%EC%95%84%EC%95%BC%ED%95%A0-%EB%82%B4%EC%9A%A9&quot; aria-label=&quot;1 주석에 담아야할 내용 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;1. 주석에 담아야할 내용&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;설명: 다른 사용자가 높은 이해를 할 수 있도록 작성가능&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) 이 데이터에서 이진트리는 해시테이블보다 40%정도 빠르다.&lt;/li&gt;
+&lt;li&gt;ex) 재귀함수를 이용하면, 기존의 100line이 될수 있는 코드가 단 20줄로 정리된다. 반면 성능은 유의미한 차이가 없다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;코드의 결함: 결함을 드러내고 수정의 여지를 남김&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ex) TODO: JPEG외 다른 이미지 포맷도 처리할 수 있어야 한다&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ex) &lt;a href=&quot;https://github.com/facebook/react/blob/master/packages/react-is/src/ReactIs.js&quot;&gt;실제 React 코드에 포함된 주석&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// AsyncMode should be deprecated&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;isAsyncMode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;object&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; any&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;__DEV__&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;!&lt;/span&gt;hasWarnedAboutDeprecatedIsAsyncMode&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      hasWarnedAboutDeprecatedIsAsyncMode &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token comment&quot;&gt;// Using console[&apos;warn&apos;] to evade Babel and ESLint&lt;/span&gt;
+      console&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;warn&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;token string&quot;&gt;&apos;The ReactIs.isAsyncMode() alias has been deprecated, &apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt;
+          &lt;span class=&quot;token string&quot;&gt;&apos;and will be removed in React 18+.&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;상수에 대한 설명: 왜 특정한 값을 갖게 되는지에 대한 이해를 시킬 수 있음&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ex) &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 합리적인 한계 - 1000개 이상을 구독하는 사람은 기획 논의상 없다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;MAX_SUBSCRIPTIONS&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// 사용자들은 0.72가 크기/해당도 대비 최선이라고 생각한다.&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;IMAGE_QUALITY&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.72&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;2-임시-변수-줄이기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#2-%EC%9E%84%EC%8B%9C-%EB%B3%80%EC%88%98-%EC%A4%84%EC%9D%B4%EA%B8%B0&quot; aria-label=&quot;2 임시 변수 줄이기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;2. 임시 변수 줄이기&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;ex)&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; year &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Date&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getFullYear&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+message&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;lastVistedYear &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; year&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이미 new Date().getFullYear()이라는 메서드의 네이밍에서 명확한 의미를 가지고 있다. + 한번만 사용된다.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;3-변수는-좁은-곳에-쓰자&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#3-%EB%B3%80%EC%88%98%EB%8A%94-%EC%A2%81%EC%9D%80-%EA%B3%B3%EC%97%90-%EC%93%B0%EC%9E%90&quot; aria-label=&quot;3 변수는 좁은 곳에 쓰자 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;3. 변수는 좁은 곳에 쓰자&lt;/h4&gt;
+&lt;p&gt;  네임스페이스 관리에 좋다.(이름 중복, side effects)
+코드를 읽는 사람이 생각해야 하는 변수 수를 줄여준다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;let 대신 const 쓰기
+변수 값을 추적하는 일은 어렵다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;4-네이밍은-작은-설명이다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#4-%EB%84%A4%EC%9D%B4%EB%B0%8D%EC%9D%80-%EC%9E%91%EC%9D%80-%EC%84%A4%EB%AA%85%EC%9D%B4%EB%8B%A4&quot; aria-label=&quot;4 네이밍은 작은 설명이다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;4. 네이밍은 작은 설명이다.&lt;/h4&gt;
+&lt;h4 id=&quot;5-숫자는-이름이-아니다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#5-%EC%88%AB%EC%9E%90%EB%8A%94-%EC%9D%B4%EB%A6%84%EC%9D%B4-%EC%95%84%EB%8B%88%EB%8B%A4&quot; aria-label=&quot;5 숫자는 이름이 아니다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;5. 숫자는 이름이 아니다&lt;/h4&gt;
+&lt;p&gt;  index로 접근하는 것 피하기&lt;/p&gt;
+&lt;h4 id=&quot;6-재사용은-의미를-더-명확하게-만들어준다&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#6-%EC%9E%AC%EC%82%AC%EC%9A%A9%EC%9D%80-%EC%9D%98%EB%AF%B8%EB%A5%BC-%EB%8D%94-%EB%AA%85%ED%99%95%ED%95%98%EA%B2%8C-%EB%A7%8C%EB%93%A4%EC%96%B4%EC%A4%80%EB%8B%A4&quot; aria-label=&quot;6 재사용은 의미를 더 명확하게 만들어준다 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;6. 재사용은 의미를 더 명확하게 만들어준다.&lt;/h4&gt;
+&lt;h4 id=&quot;7-기타&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#7-%EA%B8%B0%ED%83%80&quot; aria-label=&quot;7 기타 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;7. 기타&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;className에 대한 비교
+classList를 이용하여 비교하기&lt;/li&gt;
+&lt;li&gt;함수 매개변수 갯수
+매개변수가 많아지면 여러가지 일을 할 가능성이 있다.
+매개변수가 적을수록 함수가 더 명확하고, 실수 가능성이 낮아진다.&lt;/li&gt;
+&lt;li&gt;if 문 중괄호 사용하기&lt;/li&gt;
+&lt;li&gt;구현한 요구사항 체크해서 PR메시지 또는 README파일에 담아서 제출하기
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 370px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 51%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAIAAAA7N+mxAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABjElEQVQoz22R3U7bQBCF8+ylUiVAaq8KD8B1b/oSoKqVSXAcO7ve/539sRNKQk2AShwnSEWo0mq9Gu8358zZyXYz3K0GM58rQ7Hr1783FNKfh8fd01+sh8fnYfd0OOOA+ts1aYP8NvvOri7rohDGSWUa1lJMuV9TzKlboV3MPdbmfngPl6H6Unz26622PqaOC0Uhc6mUceiCIviyqoXUt3fbd+KTKd2c/Dy2oW+BxdxC2hF2oXQ5X2jrADe8bf8Lz0J5+uvUpRVuAxbKWB9wlsYuGmYdwX/NwFr4B3w/7P7BVazPrs9s6pW2gJlQAHgrPSXj/JK1IWbnqWFcGwcAER5SHOHCT48uP1CEskEq8OxDWnJRQ9YHKCIFGfPYLiSM5CniTre6BT8qn19/JZ9gDQ6xczHODU0F/1L7mCshHUUMYj3hF9s3GuHCzz79+Gg0SW2Q0/SmFPvXgqYOCeJwq7WFJIpoNK/qeslelZvMLxYXMXaUMsaulxwiIMcpUgcv4BE4iviE/Vuickj+BRwkGgOdPuJoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;pr_implementation&quot;
+        title=&quot;pr_implementation&quot;
+        src=&quot;/static/2ec590c1de9ffad08728ca3f7ee28d2e/1efb2/pr_implementation.png&quot;
+        srcset=&quot;/static/2ec590c1de9ffad08728ca3f7ee28d2e/5a46d/pr_implementation.png 300w,
+/static/2ec590c1de9ffad08728ca3f7ee28d2e/1efb2/pr_implementation.png 370w&quot;
+        sizes=&quot;(max-width: 370px) 100vw, 370px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;원격 저장소 push할 것과 말아야할 것 구분하기&lt;/li&gt;
+&lt;li&gt;예외상황 고려, 엣지 케이스&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;랜덤값에 대한 테스트 고민
+테스트 가능한 코드와 힘든 부분을 분리하기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;FORWARD_NUM&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;4&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;token function-variable function&quot;&gt;getRandomNumber&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;floor&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;Math&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;poistion &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;move&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getRandomNumber&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;FORWARD_NUM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;position&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;move에 진행되는 숫자 값이 달라지는데 이부분을 리팩토링을 아래처럼 할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;Car&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;poistion &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;
+
+  &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function-variable function&quot;&gt;move&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token parameter&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;number &lt;span class=&quot;token operator&quot;&gt;&gt;=&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;FORWARD_NUM&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;position&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;느낀점&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%8A%90%EB%82%80%EC%A0%90&quot; aria-label=&quot;느낀점 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;느낀점&lt;/h3&gt;
+&lt;p&gt;수업을 처음 시작할 때에 내 첫 생각은 &lt;code class=&quot;language-text&quot;&gt;주석은 달지 않아야 한다.&lt;/code&gt; 였다.
+하지만 예시들과 오픈소스에서 사용되는 것을 보면서 좋은 주석의 사례들을 알수 있었다.
+코드는 혼자만 보는 것이 아니기 때문에 다른 사람들에게 도움을 줄 수 있을것이다.&lt;/p&gt;
+&lt;p&gt;공통 피드백 내용에는 없지만 순수함수를 사용함으로써 어떤 동작을 하는지 보장할 수 있음을 알수 있었다.
+네이밍에 대한 피드백에서는 &lt;code class=&quot;language-text&quot;&gt;함수 네이밍&lt;/code&gt; 뿐만아니라, &lt;code class=&quot;language-text&quot;&gt;변수&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;api&lt;/code&gt;자체도 네이밍으로 이해를 도울 수 있다는 점을 깨달앗다.&lt;/p&gt;
+&lt;p&gt;추가적으로 parseInt는 기본 10진법으로 바꾸는 api가 아니다. 차라리 Number()를 이용하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[[Performance] Optimizing javascript - (2)]]></title><description><![CDATA[Reduce JavaScript payloads with code splitting 어플리케이션을 로드했을때 필요한 초기 route에 관련한 코드만 보내기 위해 자바스크립트 번들을 분리해라 위의 예시에서 moduleA는 someFunction…]]></description><link>https://seojihwan.github.io/Web-Performance/optimizing_javascript-2/</link><guid isPermaLink="false">https://seojihwan.github.io/Web-Performance/optimizing_javascript-2/</guid><pubDate>Mon, 15 Feb 2021 18:26:14 GMT</pubDate><content:encoded>&lt;h3 id=&quot;reduce-javascript-payloads-with-code-splitting&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#reduce-javascript-payloads-with-code-splitting&quot; aria-label=&quot;reduce javascript payloads with code splitting permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Reduce JavaScript payloads with code splitting&lt;/h3&gt;
 &lt;p&gt;어플리케이션을 로드했을때 필요한 초기 route에 관련한 코드만 보내기 위해 자바스크립트 번들을 분리해라&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;js&quot;&gt;&lt;pre class=&quot;language-js&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; moduleA &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;library&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
