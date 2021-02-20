@@ -1,5 +1,5 @@
 ---
-title: "[woowa-course] 리뷰 피드백 정리 - (1)"
+title: "[woowa-course] 리뷰 피드백 정리 (계산기)- (1)"
 date: 2021-02-17 08:57:33
 category: 'woowa-course'
 draft: false
