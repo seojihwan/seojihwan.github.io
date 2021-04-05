@@ -10,7 +10,7 @@ https://github.com/woowacourse/javascript-racingcar/pulls
 
 #### 2. 
 
-document.querySelector와 같이 반복되는 코드는 shorcut 만들어보자
+document.querySelector와 같이 반복되는 코드는 shortcut 만들어보자
 
 ```js
 const $ = selector => document.querySelector(selector);
@@ -179,7 +179,7 @@ Input -> btn -> should 와 같은 자주사용되는 패턴 함수로 제공해�
 ### 46
 
 setInterval과 set timeout의 차이
-![](setTimeout%20vs%20setInterval.png)
+![](./img/setTimeout-vs-setInterval.png)
 (setTimeout vs SetInterval)[https://javascript.info/settimeout-setinterval#:~:text=setTimeout%20allows%20us%20to%20run,repeating%20continuously%20at%20that%20interval]
 
 

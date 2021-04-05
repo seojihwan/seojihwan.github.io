@@ -19,7 +19,7 @@ https://github.com/woowacourse/javascript-calculator
     - ex) 재귀함수를 이용하면, 기존의 100line이 될수 있는 코드가 단 20줄로 정리된다. 반면 성능은 유의미한 차이가 없다.
 
   - 코드의 결함: 결함을 드러내고 수정의 여지를 남김
-    - ex) TODO: JPEG외 다른 이미지 포맷도 처리할 수 있어야 한다
+    - ex) TODO: JPEG외 다른 이미지 포맷도 처리할 수 있어야 한다.
     - ex) [실제 React 코드에 포함된 주석](https://github.com/facebook/react/blob/master/packages/react-is/src/ReactIs.js)
         ```js
         // AsyncMode should be deprecated
