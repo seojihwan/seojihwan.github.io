@@ -8,7 +8,7 @@ draft: false
 ### 레이싱 경주 게임 리뷰 정리
 https://github.com/woowacourse/javascript-racingcar/pulls
 
-#### 2. 
+#### #2. 
 
 document.querySelector와 같이 반복되는 코드는 shortcut 만들어보자
 
@@ -99,7 +99,7 @@ RacingResult 이 this.cars 에 부모의 값을 다시 저장할 이유가 없�
 [함수 표현식, 함수 선언식 고민](https://github.com/woowacourse/javascript-racingcar/pull/18#discussion_r573838645)
 
 함수 표현식, 함수 선언식중 고민
-호이스팅이 되면 함수를 사용하기 전에 반드시 함수를 선언해야한다.라는 규칙을 위반하고 가독성도 떨어지는 걸로 알고있어요!
+호이스팅이 되면 함수를 사용하기 전에 반드시 함수를 선언해야한다.라는 규칙을 위반하고 가독성도 떨어진다.
 그래서 var사용을 지양하는 것처럼 함수 선언식을 지양해야된다고 생각
 
 #### #19.
@@ -176,22 +176,22 @@ Input -> btn -> should 와 같은 자주사용되는 패턴 함수로 제공해�
   })
 ```
 
-### 46
+#### #46
 
 setInterval과 set timeout의 차이
 ![](./img/setTimeout-vs-setInterval.png)
 (setTimeout vs SetInterval)[https://javascript.info/settimeout-setinterval#:~:text=setTimeout%20allows%20us%20to%20run,repeating%20continuously%20at%20that%20interval]
 
 
-### 47 
+#### #47 
 [비동기를 위한 유틸과, 도메인의 분리](https://github.com/woowacourse/javascript-racingcar/pull/47#discussion_r576779104)
 
-### 49
+#### #49
 [상수화를 반드시 해야할까?](https://github.com/woowacourse/javascript-racingcar/pull/49#discussion_r578053255)
 
 의미를 갖는 상수라면 상수화 하고 아무 의미가 없다면 명시적으로 상수화 하지 않아도 좋다.
 
-### 50
+#### #50
 [is****** 메서드의 네이밍](https://github.com/woowacourse/javascript-racingcar/pull/50#discussion_r577632586)
 
 isObject로 정의 하고 !isObject를 사용하는 것과
